@@ -1,0 +1,220 @@
+> Task :gradle:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :gradle:compileKotlin UP-TO-DATE
+> Task :gradle:compileJava NO-SOURCE
+> Task :gradle:compileGroovy NO-SOURCE
+> Task :gradle:pluginDescriptors UP-TO-DATE
+> Task :gradle:processResources UP-TO-DATE
+> Task :gradle:classes UP-TO-DATE
+> Task :gradle:jar UP-TO-DATE
+WARNING: We recommend using a newer Android Gradle plugin to use compile SDK version 37.0
+
+This Android Gradle plugin (8.13.1) was tested up to compile SDK version 36.1.
+
+You are strongly encouraged to update your project to use a newer
+Android Gradle plugin that has been tested with compile SDK version 37.0.
+
+If you are already using the latest version of the Android Gradle plugin,
+you may need to wait until a newer version with support for compile SDK version 37.0 is available.
+
+For more information refer to the compatibility table:
+https://d.android.com/r/tools/api-level-support
+
+To suppress this warning, add/update
+    android.suppressUnsupportedCompileSdk=37.0
+to this project's gradle.properties.
+> Task :app:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :app:compileFlutterBuildChildDebug
+> Task :app:packJniLibsflutterBuildChildDebug UP-TO-DATE
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preChildDebugBuild UP-TO-DATE
+> Task :app:checkChildDebugAarMetadata UP-TO-DATE
+> Task :app:processChildDebugNavigationResources UP-TO-DATE
+> Task :app:compileChildDebugNavigationResources UP-TO-DATE
+> Task :app:cleanMergeChildDebugAssets
+> Task :app:mergeChildDebugShaders UP-TO-DATE
+> Task :app:compileChildDebugShaders NO-SOURCE
+> Task :app:generateChildDebugAssets UP-TO-DATE
+> Task :app:mergeChildDebugAssets
+> Task :app:copyFlutterAssetsChildDebug
+> Task :app:generateChildDebugResValues UP-TO-DATE
+> Task :app:mapChildDebugSourceSetPaths UP-TO-DATE
+> Task :app:generateChildDebugResources UP-TO-DATE
+> Task :app:mergeChildDebugResources UP-TO-DATE
+> Task :app:packageChildDebugResources UP-TO-DATE
+> Task :app:parseChildDebugLocalResources UP-TO-DATE
+> Task :app:createChildDebugCompatibleScreenManifests UP-TO-DATE
+> Task :app:extractDeepLinksChildDebug UP-TO-DATE
+> Task :app:processChildDebugMainManifest UP-TO-DATE
+> Task :app:processChildDebugManifest UP-TO-DATE
+> Task :app:processChildDebugManifestForPackage UP-TO-DATE
+> Task :app:processChildDebugResources UP-TO-DATE
+> Task :app:javaPreCompileChildDebug UP-TO-DATE
+> Task :app:preChildDebugUnitTestBuild UP-TO-DATE
+> Task :app:preChildDebugAndroidTestBuild SKIPPED
+> Task :app:javaPreCompileChildDebugUnitTest
+
+> Task :app:compileChildDebugKotlin
+w: file:///home/vltp008/Documents/sideProjects/pairdroid/android/app/src/main/kotlin/org/pairdroid/pairdroid/DeviceData.kt:37:77 Type argument for reified type parameter 'T' was inferred to the intersection of ['kotlin.Comparable<*>' & 'java.io.Serializable']. Reification of an intersection type results in the common supertype being used. This may lead to subtle issues and an explicit type argument is encouraged. This will become an error in a future release.
+w: file:///home/vltp008/Documents/sideProjects/pairdroid/android/app/src/main/kotlin/org/pairdroid/pairdroid/DeviceData.kt:53:23 'val allNetworks: Array<(out) Network!>' is deprecated. Deprecated in Java.
+
+> Task :app:checkChildDebugAndroidTestAarMetadata
+> Task :app:compileChildDebugJavaWithJavac UP-TO-DATE
+> Task :app:processChildDebugJavaRes UP-TO-DATE
+> Task :app:bundleChildDebugClassesToRuntimeJar
+> Task :app:processChildDebugAndroidTestNavigationResources
+> Task :app:bundleChildDebugClassesToCompileJar
+> Task :app:compileChildDebugAndroidTestNavigationResources
+> Task :app:generateChildDebugAndroidTestResValues
+> Task :app:mapChildDebugAndroidTestSourceSetPaths
+> Task :app:generateChildDebugAndroidTestResources
+> Task :app:mergeChildDebugAndroidTestResources
+> Task :app:processChildDebugAndroidTestManifest
+> Task :app:javaPreCompileChildDebugAndroidTest
+> Task :app:mergeChildDebugJavaResource UP-TO-DATE
+> Task :app:checkChildDebugDuplicateClasses UP-TO-DATE
+> Task :app:compileChildDebugUnitTestKotlin
+> Task :app:desugarChildDebugFileDependencies UP-TO-DATE
+> Task :app:compileChildDebugUnitTestJavaWithJavac NO-SOURCE
+> Task :app:processChildDebugUnitTestJavaRes
+> Task :app:processChildDebugAndroidTestResources
+> Task :app:compressChildDebugAssets
+> Task :app:testChildDebugUnitTest
+> Task :app:mergeExtDexChildDebug UP-TO-DATE
+> Task :app:mergeLibDexChildDebug UP-TO-DATE
+> Task :app:dexBuilderChildDebug
+> Task :app:configureCMakeDebug[arm64-v8a]
+> Task :app:buildCMakeDebug[arm64-v8a]
+> Task :app:configureCMakeDebug[armeabi-v7a]
+> Task :app:buildCMakeDebug[armeabi-v7a]
+> Task :app:configureCMakeDebug[x86_64]
+> Task :app:buildCMakeDebug[x86_64]
+> Task :app:mergeChildDebugJniLibFolders UP-TO-DATE
+> Task :app:mergeProjectDexChildDebug
+> Task :app:mergeChildDebugNativeLibs UP-TO-DATE
+> Task :app:stripChildDebugDebugSymbols UP-TO-DATE
+> Task :app:validateSigningChildDebug UP-TO-DATE
+> Task :app:writeChildDebugAppMetadata UP-TO-DATE
+> Task :app:writeChildDebugSigningConfigVersions UP-TO-DATE
+> Task :app:mergeChildDebugAndroidTestShaders
+> Task :app:compileChildDebugAndroidTestShaders NO-SOURCE
+> Task :app:generateChildDebugAndroidTestAssets UP-TO-DATE
+> Task :app:mergeChildDebugAndroidTestAssets
+> Task :app:compressChildDebugAndroidTestAssets
+> Task :app:desugarChildDebugAndroidTestFileDependencies
+> Task :app:checkChildDebugAndroidTestDuplicateClasses
+> Task :app:mergeChildDebugAndroidTestJniLibFolders
+> Task :app:compileChildDebugAndroidTestKotlin
+> Task :app:compileChildDebugAndroidTestJavaWithJavac NO-SOURCE
+> Task :app:processChildDebugAndroidTestJavaRes
+> Task :app:mergeLibDexChildDebugAndroidTest
+> Task :app:mergeChildDebugAndroidTestJavaResource
+> Task :app:dexBuilderChildDebugAndroidTest
+> Task :app:mergeChildDebugAndroidTestNativeLibs NO-SOURCE
+> Task :app:stripChildDebugAndroidTestDebugSymbols NO-SOURCE
+> Task :app:mergeProjectDexChildDebugAndroidTest
+> Task :app:validateSigningChildDebugAndroidTest
+> Task :app:writeChildDebugAndroidTestSigningConfigVersions
+> Task :app:mergeExtDexChildDebugAndroidTest
+> Task :app:packageChildDebug
+> Task :app:createChildDebugApkListingFileRedirect UP-TO-DATE
+> Task :app:packageChildDebugAndroidTest
+> Task :app:createChildDebugAndroidTestApkListingFileRedirect
+> Task :app:connectedChildDebugAndroidTest
+Starting 0 tests on Pixel_9_Pro_API_36(AVD) - 16
+
+Finished 0 tests on Pixel_9_Pro_API_36(AVD) - 16
+
+> Task :app:connectedChildDebugAndroidTest FAILED
+ErrorName: UNKNOWN
+NameSpace: DdmlibAndroidDeviceController
+ErrorCode: 1
+ErrorType: TEST
+Message: Failed to install split APK(s): [/home/vltp008/Documents/sideProjects/pairdroid/build/app/outputs/apk/child/debug/app-child-debug.apk]
+Failed to install split APK(s): [/home/vltp008/Documents/sideProjects/pairdroid/build/app/outputs/apk/child/debug/app-child-debug.apk]
+'package install-create -r --bypass-low-target-sdk-block -t --user 0 -S 155168556' returns error 'Unknown failure: Exception occurred while executing 'install-create':
+android.os.ParcelableException: java.io.IOException: Requested internal only, but not enough space
+at android.util.ExceptionUtils.wrap(ExceptionUtils.java:34)
+at com.android.server.pm.PackageInstallerService.createSession(PackageInstallerService.java:671)
+at com.android.server.pm.PackageManagerShellCommand.doCreateSession(PackageManagerShellCommand.java:3978)
+at com.android.server.pm.PackageManagerShellCommand.runInstallCreate(PackageManagerShellCommand.java:1741)
+at com.android.server.pm.PackageManagerShellCommand.onCommand(PackageManagerShellCommand.java:257)
+at com.android.modules.utils.BasicShellCommandHandler.exec(BasicShellCommandHandler.java:97)
+at android.os.ShellCommand.exec(ShellCommand.java:38)
+at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onShellCommand(PackageManagerService.java:6684)
+at android.os.Binder.shellCommand(Binder.java:1151)
+at android.os.Binder.onTransact(Binder.java:953)
+at android.content.pm.IPackageManager$Stub.onTransact(IPackageManager.java:4729)
+at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onTransact(PackageManagerService.java:6668)
+at android.os.Binder.execTransactInternal(Binder.java:1426)
+at android.os.Binder.execTransact(Binder.java:1365)
+Caused by: java.io.IOException: Requested internal only, but not enough space
+at com.android.internal.content.InstallLocationUtils.resolveInstallVolume(InstallLocationUtils.java:242)
+at com.android.internal.content.InstallLocationUtils.resolveInstallVolume(InstallLocationUtils.java:153)
+at com.android.internal.content.InstallLocationUtils.resolveInstallVolume(InstallLocationUtils.java:168)
+at com.android.server.pm.PackageInstallerService.createSessionInternal(PackageInstallerService.java:966)
+at com.android.server.pm.PackageInstallerService.createSession(PackageInstallerService.java:668)
+... 12 more'
+com.android.ddmlib.InstallException: 'package install-create -r --bypass-low-target-sdk-block -t --user 0 -S 155168556' returns error 'Unknown failure: Exception occurred while executing 'install-create':
+android.os.ParcelableException: java.io.IOException: Requested internal only, but not enough space
+at android.util.ExceptionUtils.wrap(ExceptionUtils.java:34)
+at com.android.server.pm.PackageInstallerService.createSession(PackageInstallerService.java:671)
+at com.android.server.pm.PackageManagerShellCommand.doCreateSession(PackageManagerShellCommand.java:3978)
+at com.android.server.pm.PackageManagerShellCommand.runInstallCreate(PackageManagerShellCommand.java:1741)
+at com.android.server.pm.PackageManagerShellCommand.onCommand(PackageManagerShellCommand.java:257)
+at com.android.modules.utils.BasicShellCommandHandler.exec(BasicShellCommandHandler.java:97)
+at android.os.ShellCommand.exec(ShellCommand.java:38)
+at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onShellCommand(PackageManagerService.java:6684)
+at android.os.Binder.shellCommand(Binder.java:1151)
+at android.os.Binder.onTransact(Binder.java:953)
+at android.content.pm.IPackageManager$Stub.onTransact(IPackageManager.java:4729)
+at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onTransact(PackageManagerService.java:6668)
+at android.os.Binder.execTransactInternal(Binder.java:1426)
+at android.os.Binder.execTransact(Binder.java:1365)
+Caused by: java.io.IOException: Requested internal only, but not enough space
+at com.android.internal.content.InstallLocationUtils.resolveInstallVolume(InstallLocationUtils.java:242)
+at com.android.internal.content.InstallLocationUtils.resolveInstallVolume(InstallLocationUtils.java:153)
+at com.android.internal.content.InstallLocationUtils.resolveInstallVolume(InstallLocationUtils.java:168)
+at com.android.server.pm.PackageInstallerService.createSessionInternal(PackageInstallerService.java:966)
+at com.android.server.pm.PackageInstallerService.createSession(PackageInstallerService.java:668)
+... 12 more'
+	at com.android.ddmlib.SplitApkInstallerBase.createMultiInstallSession(SplitApkInstallerBase.java:124)
+	at com.android.ddmlib.SplitApkInstaller.install(SplitApkInstaller.java:68)
+	at com.android.ddmlib.IDeviceSharedImpl.installPackages(IDeviceSharedImpl.java:395)
+	at com.android.ddmlib.internal.DeviceImpl.lambda$installPackages$34(DeviceImpl.java:1491)
+	at com.android.ddmlib.internal.DeviceImpl.logRun3(DeviceImpl.java:1833)
+	at com.android.ddmlib.internal.DeviceImpl.installPackages(DeviceImpl.java:1488)
+	at com.android.ddmlib.internal.DeviceImpl.lambda$installPackages$35(DeviceImpl.java:1503)
+	at com.android.ddmlib.internal.DeviceImpl.logRun3(DeviceImpl.java:1833)
+	at com.android.ddmlib.internal.DeviceImpl.installPackages(DeviceImpl.java:1499)
+	at com.android.tools.utp.plugins.deviceprovider.ddmlib.DdmlibAndroidDevice.installPackages(DdmlibAndroidDevice.kt:76)
+	at com.android.tools.utp.plugins.deviceprovider.ddmlib.DdmlibAndroidDeviceController$executeAsync$deferred$1.invokeSuspend(DdmlibAndroidDeviceController.kt:259)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:108)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:584)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:793)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:697)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:684)
+
+
+[Incubating] Problems report is available at: file:///home/vltp008/Documents/sideProjects/pairdroid/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:connectedChildDebugAndroidTest'.
+> There were failing tests. See the report at: file:///home/vltp008/Documents/sideProjects/pairdroid/build/app/reports/androidTests/connected/debug/flavors/child/index.html
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.13/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD FAILED in 1m 16s
+85 actionable tasks: 49 executed, 36 up-to-date

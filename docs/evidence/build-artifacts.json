@@ -1,0 +1,12 @@
+[
+  {
+    "file": "build/app/outputs/flutter-apk/app-child-debug.apk",
+    "bytes": 141302244,
+    "sha256": "997c04a5c056d87a00b9d80a9219bde8bd5545d03a80d57930e6a761bcfd6df7"
+  },
+  {
+    "file": "build/app/outputs/flutter-apk/app-parent-debug.apk",
+    "bytes": 141302440,
+    "sha256": "84cf39f87cf567485a4630e2d4b1ece47d60ce10aacf21cc1efbd83e27fdc11f"
+  }
+]

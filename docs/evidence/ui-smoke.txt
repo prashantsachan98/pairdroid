@@ -1,0 +1,12 @@
+2026-10-24 — disposable Android 16/API 36 emulator
+Child APK installed successfully and launched through MainActivity.
+Flutter rendered original Material interface without a runtime error.
+Allow network & notifications opened Android's POST_NOTIFICATIONS prompt.
+The tester selected Allow through the system UI.
+Start local service changed the Child status to Local service is active.
+Android dumpsys reported LanService isForeground=true, foregroundId=1,
+connected-device type 0x10, ongoing foreground notification with two actions.
+This is one-emulator UI smoke evidence, not two-phone LAN acceptance.
+Open pairing window displayed a live six-digit code.
+Parent APK installed and rendered its real empty-device dashboard and pairing form.
+No AndroidRuntime crash was logged during the UI smoke sequence.

@@ -1,0 +1,127 @@
+[
+  {
+    "package": "async",
+    "license_heading": "Copyright 2015, the Dart project authors. ",
+    "license_sha256": "ff15faa32a2e638107b7789592b14426162a75ba620044ee2340a20ec6ce5e73"
+  },
+  {
+    "package": "boolean_selector",
+    "license_heading": "Copyright 2016, the Dart project authors.",
+    "license_sha256": "b71519245009a3b8f126196a5408ec031e216e8e0d985085958c6543f82a8a2a"
+  },
+  {
+    "package": "characters",
+    "license_heading": "Copyright 2019, the Dart project authors. ",
+    "license_sha256": "0371d1da6a57fb791db29d29b95333429205f51f3cb2eb3a0c12d91838a38744"
+  },
+  {
+    "package": "clock",
+    "license_heading": "",
+    "license_sha256": "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd"
+  },
+  {
+    "package": "collection",
+    "license_heading": "Copyright 2015, the Dart project authors. ",
+    "license_sha256": "ff15faa32a2e638107b7789592b14426162a75ba620044ee2340a20ec6ce5e73"
+  },
+  {
+    "package": "fake_async",
+    "license_heading": "",
+    "license_sha256": "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd"
+  },
+  {
+    "package": "flutter",
+    "license_heading": "Copyright 2014 The Flutter Authors. All rights reserved.",
+    "license_sha256": "a598db94b6290ffbe10b5ecf911057b6a943351c727fdda9e5f2891d68700a20"
+  },
+  {
+    "package": "flutter_lints",
+    "license_heading": "Copyright 2013 The Flutter Authors. All rights reserved.",
+    "license_sha256": "89519eca6f7b9529b35bdddd623a58c3af06a88c458dbd6531ddb4675acf75a9"
+  },
+  {
+    "package": "leak_tracker",
+    "license_heading": "Copyright 2022, the Dart project authors.",
+    "license_sha256": "08a004aa8956c3cf3b24f7f69c966247233953e18e6afaa61191ea47b7eb70f6"
+  },
+  {
+    "package": "leak_tracker_flutter_testing",
+    "license_heading": "Copyright 2022, the Dart project authors.",
+    "license_sha256": "08a004aa8956c3cf3b24f7f69c966247233953e18e6afaa61191ea47b7eb70f6"
+  },
+  {
+    "package": "leak_tracker_testing",
+    "license_heading": "Copyright 2022, the Dart project authors.",
+    "license_sha256": "08a004aa8956c3cf3b24f7f69c966247233953e18e6afaa61191ea47b7eb70f6"
+  },
+  {
+    "package": "lints",
+    "license_heading": "Copyright 2021, the Dart project authors.",
+    "license_sha256": "421fe78c3b5df297f8b4ab2c74f2450a274ee6d245a113091f6b9f90570af193"
+  },
+  {
+    "package": "matcher",
+    "license_heading": "Copyright 2014, the Dart project authors. ",
+    "license_sha256": "3c32b53167c7dae9190c38dab5dd9fe1789c53623ebc7d1babcb29914c5b3f16"
+  },
+  {
+    "package": "material_color_utilities",
+    "license_heading": "",
+    "license_sha256": "d103f246ef4c18dab8af0c1dcf6a8af884e5cff554da7261a48ac43c17d98f2e"
+  },
+  {
+    "package": "meta",
+    "license_heading": "Copyright 2016, the Dart project authors.",
+    "license_sha256": "b71519245009a3b8f126196a5408ec031e216e8e0d985085958c6543f82a8a2a"
+  },
+  {
+    "package": "path",
+    "license_heading": "Copyright 2014, the Dart project authors. ",
+    "license_sha256": "3c32b53167c7dae9190c38dab5dd9fe1789c53623ebc7d1babcb29914c5b3f16"
+  },
+  {
+    "package": "sky_engine",
+    "license_heading": "icu",
+    "license_sha256": "ef0973379d881edb3688e98bc55d2185881eda7cfb343806e5dc21ca8ce4ec1b"
+  },
+  {
+    "package": "source_span",
+    "license_heading": "Copyright 2014, the Dart project authors. ",
+    "license_sha256": "3c32b53167c7dae9190c38dab5dd9fe1789c53623ebc7d1babcb29914c5b3f16"
+  },
+  {
+    "package": "stack_trace",
+    "license_heading": "Copyright 2014, the Dart project authors.",
+    "license_sha256": "ff0b91d4f3c32b25cb6ec84985e8da89b0ba2a2b2f7eef353cda5e5423a20390"
+  },
+  {
+    "package": "stream_channel",
+    "license_heading": "Copyright 2015, the Dart project authors. ",
+    "license_sha256": "ff15faa32a2e638107b7789592b14426162a75ba620044ee2340a20ec6ce5e73"
+  },
+  {
+    "package": "string_scanner",
+    "license_heading": "Copyright 2014, the Dart project authors. ",
+    "license_sha256": "3c32b53167c7dae9190c38dab5dd9fe1789c53623ebc7d1babcb29914c5b3f16"
+  },
+  {
+    "package": "term_glyph",
+    "license_heading": "Copyright 2017, the Dart project authors. ",
+    "license_sha256": "ea97a7558a7bd7cee4e2355f7529e3cbebb0dcbb546ddb9a90f10c9eb6b08da5"
+  },
+  {
+    "package": "test_api",
+    "license_heading": "Copyright 2018, the Dart project authors. ",
+    "license_sha256": "ff1b9f0df9036c04be424b1e3ce12789bea880ad5ffc3a48e069ae2d40a087a4"
+  },
+  {
+    "package": "vector_math",
+    "license_heading": "Copyright 2015, Google Inc. All rights reserved.",
+    "license_sha256": "b5d856a1e27e9ebea4957fc3526f1c65782a04894b113c6b3b0fb1321dbdec55"
+  },
+  {
+    "package": "vm_service",
+    "license_heading": "Copyright 2015, the Dart project authors.",
+    "license_sha256": "ad6a71997da90924b2cfb1fb47ec46537f70faf469efe016168794ae45ed6888"
+  }
+]

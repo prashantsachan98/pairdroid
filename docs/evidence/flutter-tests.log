@@ -1,0 +1,5 @@
+00:00 +0: loading /home/vltp008/Documents/sideProjects/pairdroid/test/pairing_test.dart
+00:00 +0: pairing validates address, port, full fingerprint and code
+00:00 +1: native errors reach caller without fake fallback data
+00:00 +2: parent has no fake paired devices and opens real pairing workflow
+00:01 +3: All tests passed!

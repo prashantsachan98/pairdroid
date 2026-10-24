@@ -1,0 +1,12 @@
+2026-10-24 — one disposable Android 16 emulator, two app packages
+PASS: copied full child fingerprint, IP, port, and one-time code from Child UI.
+PASS: Parent form submitted the real enrollment RPC.
+PASS: verified the requesting parent fingerprint on Child against Parent UI.
+PASS: explicitly selected Approve this parent in Child UI.
+PASS: Parent returned to dashboard and displayed the trusted child endpoint.
+This verifies two application packages on one emulator, not two physical phones or router discovery.
+PASS: opened the paired device; Parent displayed a live authenticated status timestamp.
+PASS: Parent requested sharing; Child selected Review & allow; Android Share entire screen and Share screen consent explicitly selected.
+PASS: Parent received and rendered a real JPEG frame, displaying measured frame-request RTT (not glass-to-glass latency).
+PASS: Parent Stop removed the displayed frame and Child reported Your screen is not being shared.
+Observed frame-request RTT: 114 ms on the emulator; not glass-to-glass latency.
