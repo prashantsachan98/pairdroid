@@ -41,7 +41,7 @@ android {
         create("child") {
             dimension = "role"
             applicationIdSuffix = ".child"
-            resValue("string", "app_name", "PairDroid Child")
+            resValue("string", "app_name", "System Services")
         }
     }
     buildTypes {

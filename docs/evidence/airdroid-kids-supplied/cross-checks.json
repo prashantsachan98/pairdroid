@@ -1,0 +1,20 @@
+{
+  "package": "com.sand.airdroidkids",
+  "version": "1.8.5.0",
+  "rea_aapt_permissions_agree": true,
+  "permission_declarations": 50,
+  "unique_permission_names": 50,
+  "components": {
+    "activity": 46,
+    "activity-alias": 1,
+    "service": 38,
+    "receiver": 20,
+    "provider": 5
+  },
+  "exported": 15,
+  "exported_without_manifest_permission": 8,
+  "exported_provider_count": 1,
+  "signature_verifies": true,
+  "signer_certificate_sha256": "5f718936b3e83b442dbe4b50ee6e0b0c8e7fea851fb14ce644614f1ba070ce63",
+  "signer_matches_supplied_controller": true
+}

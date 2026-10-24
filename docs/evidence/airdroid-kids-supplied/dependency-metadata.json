@@ -1,0 +1,559 @@
+[
+  {
+    "file": "META-INF/androidx.activity_activity-compose.version",
+    "version": "1.12.4"
+  },
+  {
+    "file": "META-INF/androidx.activity_activity-ktx.version",
+    "version": "1.12.4"
+  },
+  {
+    "file": "META-INF/androidx.activity_activity.version",
+    "version": "1.12.4"
+  },
+  {
+    "file": "META-INF/androidx.annotation_annotation-experimental.version",
+    "version": "1.5.0"
+  },
+  {
+    "file": "META-INF/androidx.appcompat_appcompat-resources.version",
+    "version": "1.7.1"
+  },
+  {
+    "file": "META-INF/androidx.appcompat_appcompat.version",
+    "version": "1.7.1"
+  },
+  {
+    "file": "META-INF/androidx.arch.core_core-runtime.version",
+    "version": "task ':arch:core:core-runtime:writeVersionFile' property 'version'"
+  },
+  {
+    "file": "META-INF/androidx.asynclayoutinflater_asynclayoutinflater.version",
+    "version": "1.0.0"
+  },
+  {
+    "file": "META-INF/androidx.autofill_autofill.version",
+    "version": "1.0.0"
+  },
+  {
+    "file": "META-INF/androidx.camera_camera-camera2.version",
+    "version": "1.4.2"
+  },
+  {
+    "file": "META-INF/androidx.camera_camera-core.version",
+    "version": "1.4.2"
+  },
+  {
+    "file": "META-INF/androidx.camera_camera-lifecycle.version",
+    "version": "1.4.2"
+  },
+  {
+    "file": "META-INF/androidx.cardview_cardview.version",
+    "version": "1.0.0"
+  },
+  {
+    "file": "META-INF/androidx.compose.animation_animation-core.version",
+    "version": "1.11.2"
+  },
+  {
+    "file": "META-INF/androidx.compose.animation_animation.version",
+    "version": "1.11.2"
+  },
+  {
+    "file": "META-INF/androidx.compose.foundation_foundation-layout.version",
+    "version": "1.11.2"
+  },
+  {
+    "file": "META-INF/androidx.compose.foundation_foundation.version",
+    "version": "1.11.2"
+  },
+  {
+    "file": "META-INF/androidx.compose.material3_material3.version",
+    "version": "1.4.0"
+  },
+  {
+    "file": "META-INF/androidx.compose.material_material-ripple.version",
+    "version": "1.11.2"
+  },
+  {
+    "file": "META-INF/androidx.compose.material_material.version",
+    "version": "1.11.2"
+  },
+  {
+    "file": "META-INF/androidx.compose.runtime_runtime-annotation.version",
+    "version": "1.11.2"
+  },
+  {
+    "file": "META-INF/androidx.compose.runtime_runtime-livedata.version",
+    "version": "1.11.2"
+  },
+  {
+    "file": "META-INF/androidx.compose.runtime_runtime-retain.version",
+    "version": "1.11.2"
+  },
+  {
+    "file": "META-INF/androidx.compose.runtime_runtime-saveable.version",
+    "version": "1.11.2"
+  },
+  {
+    "file": "META-INF/androidx.compose.runtime_runtime.version",
+    "version": "1.11.2"
+  },
+  {
+    "file": "META-INF/androidx.compose.ui_ui-geometry.version",
+    "version": "1.11.2"
+  },
+  {
+    "file": "META-INF/androidx.compose.ui_ui-graphics.version",
+    "version": "1.11.2"
+  },
+  {
+    "file": "META-INF/androidx.compose.ui_ui-text.version",
+    "version": "1.11.2"
+  },
+  {
+    "file": "META-INF/androidx.compose.ui_ui-tooling-preview.version",
+    "version": "1.11.2"
+  },
+  {
+    "file": "META-INF/androidx.compose.ui_ui-unit.version",
+    "version": "1.11.2"
+  },
+  {
+    "file": "META-INF/androidx.compose.ui_ui-util.version",
+    "version": "1.11.2"
+  },
+  {
+    "file": "META-INF/androidx.compose.ui_ui-viewbinding.version",
+    "version": "1.11.2"
+  },
+  {
+    "file": "META-INF/androidx.compose.ui_ui.version",
+    "version": "1.11.2"
+  },
+  {
+    "file": "META-INF/androidx.constraintlayout_constraintlayout-compose.version",
+    "version": "1.1.1"
+  },
+  {
+    "file": "META-INF/androidx.constraintlayout_constraintlayout.version",
+    "version": "2.2.1"
+  },
+  {
+    "file": "META-INF/androidx.coordinatorlayout_coordinatorlayout.version",
+    "version": "1.1.0"
+  },
+  {
+    "file": "META-INF/androidx.core_core-ktx.version",
+    "version": "1.16.0"
+  },
+  {
+    "file": "META-INF/androidx.core_core-splashscreen.version",
+    "version": "1.0.1"
+  },
+  {
+    "file": "META-INF/androidx.core_core-viewtree.version",
+    "version": "1.0.0"
+  },
+  {
+    "file": "META-INF/androidx.core_core.version",
+    "version": "1.16.0"
+  },
+  {
+    "file": "META-INF/androidx.cursoradapter_cursoradapter.version",
+    "version": "1.0.0"
+  },
+  {
+    "file": "META-INF/androidx.customview_customview-poolingcontainer.version",
+    "version": "1.0.0"
+  },
+  {
+    "file": "META-INF/androidx.customview_customview.version",
+    "version": "1.2.0"
+  },
+  {
+    "file": "META-INF/androidx.databinding_viewbinding.version",
+    "version": "8.9.1"
+  },
+  {
+    "file": "META-INF/androidx.datastore_datastore-preferences.version",
+    "version": "1.0.0"
+  },
+  {
+    "file": "META-INF/androidx.datastore_datastore.version",
+    "version": "1.0.0"
+  },
+  {
+    "file": "META-INF/androidx.documentfile_documentfile.version",
+    "version": "1.0.1"
+  },
+  {
+    "file": "META-INF/androidx.drawerlayout_drawerlayout.version",
+    "version": "1.1.1"
+  },
+  {
+    "file": "META-INF/androidx.dynamicanimation_dynamicanimation.version",
+    "version": "1.1.0"
+  },
+  {
+    "file": "META-INF/androidx.emoji2_emoji2-views-helper.version",
+    "version": "1.4.0"
+  },
+  {
+    "file": "META-INF/androidx.emoji2_emoji2.version",
+    "version": "1.4.0"
+  },
+  {
+    "file": "META-INF/androidx.exifinterface_exifinterface.version",
+    "version": "1.3.7"
+  },
+  {
+    "file": "META-INF/androidx.fragment_fragment-ktx.version",
+    "version": "1.8.9"
+  },
+  {
+    "file": "META-INF/androidx.fragment_fragment.version",
+    "version": "1.8.9"
+  },
+  {
+    "file": "META-INF/androidx.graphics_graphics-path.version",
+    "version": "1.0.1"
+  },
+  {
+    "file": "META-INF/androidx.graphics_graphics-shapes.version",
+    "version": "1.0.1"
+  },
+  {
+    "file": "META-INF/androidx.interpolator_interpolator.version",
+    "version": "1.0.0"
+  },
+  {
+    "file": "META-INF/androidx.legacy_legacy-support-core-ui.version",
+    "version": "1.0.0"
+  },
+  {
+    "file": "META-INF/androidx.legacy_legacy-support-core-utils.version",
+    "version": "1.0.0"
+  },
+  {
+    "file": "META-INF/androidx.legacy_legacy-support-v4.version",
+    "version": "1.0.0"
+  },
+  {
+    "file": "META-INF/androidx.lifecycle_lifecycle-extensions.version",
+    "version": "2.2.0"
+  },
+  {
+    "file": "META-INF/androidx.lifecycle_lifecycle-livedata-core-ktx.version",
+    "version": "2.9.4"
+  },
+  {
+    "file": "META-INF/androidx.lifecycle_lifecycle-livedata-core.version",
+    "version": "2.9.4"
+  },
+  {
+    "file": "META-INF/androidx.lifecycle_lifecycle-livedata-ktx.version",
+    "version": "2.9.4"
+  },
+  {
+    "file": "META-INF/androidx.lifecycle_lifecycle-livedata.version",
+    "version": "2.9.4"
+  },
+  {
+    "file": "META-INF/androidx.lifecycle_lifecycle-process.version",
+    "version": "2.9.4"
+  },
+  {
+    "file": "META-INF/androidx.lifecycle_lifecycle-runtime-compose.version",
+    "version": "2.9.4"
+  },
+  {
+    "file": "META-INF/androidx.lifecycle_lifecycle-runtime-ktx.version",
+    "version": "2.9.4"
+  },
+  {
+    "file": "META-INF/androidx.lifecycle_lifecycle-runtime.version",
+    "version": "2.9.4"
+  },
+  {
+    "file": "META-INF/androidx.lifecycle_lifecycle-service.version",
+    "version": "2.9.4"
+  },
+  {
+    "file": "META-INF/androidx.lifecycle_lifecycle-viewmodel-compose.version",
+    "version": "2.9.4"
+  },
+  {
+    "file": "META-INF/androidx.lifecycle_lifecycle-viewmodel-ktx.version",
+    "version": "2.9.4"
+  },
+  {
+    "file": "META-INF/androidx.lifecycle_lifecycle-viewmodel-savedstate.version",
+    "version": "2.9.4"
+  },
+  {
+    "file": "META-INF/androidx.lifecycle_lifecycle-viewmodel.version",
+    "version": "2.9.4"
+  },
+  {
+    "file": "META-INF/androidx.loader_loader.version",
+    "version": "1.0.0"
+  },
+  {
+    "file": "META-INF/androidx.localbroadcastmanager_localbroadcastmanager.version",
+    "version": "1.0.0"
+  },
+  {
+    "file": "META-INF/androidx.media_media.version",
+    "version": "1.0.0"
+  },
+  {
+    "file": "META-INF/androidx.navigation_navigation-common.version",
+    "version": "2.9.8"
+  },
+  {
+    "file": "META-INF/androidx.navigation_navigation-compose.version",
+    "version": "2.9.8"
+  },
+  {
+    "file": "META-INF/androidx.navigation_navigation-fragment.version",
+    "version": "2.9.8"
+  },
+  {
+    "file": "META-INF/androidx.navigation_navigation-runtime.version",
+    "version": "2.9.8"
+  },
+  {
+    "file": "META-INF/androidx.navigationevent_navigationevent-compose.version",
+    "version": "1.0.2"
+  },
+  {
+    "file": "META-INF/androidx.navigationevent_navigationevent.version",
+    "version": "1.0.2"
+  },
+  {
+    "file": "META-INF/androidx.paging_paging-common.version",
+    "version": "3.5.0"
+  },
+  {
+    "file": "META-INF/androidx.paging_paging-compose.version",
+    "version": "3.5.0"
+  },
+  {
+    "file": "META-INF/androidx.paging_paging-runtime.version",
+    "version": "3.5.0"
+  },
+  {
+    "file": "META-INF/androidx.print_print.version",
+    "version": "1.0.0"
+  },
+  {
+    "file": "META-INF/androidx.privacysandbox.ads_ads-adservices-java.version",
+    "version": "1.0.0-beta05"
+  },
+  {
+    "file": "META-INF/androidx.privacysandbox.ads_ads-adservices.version",
+    "version": "1.0.0-beta05"
+  },
+  {
+    "file": "META-INF/androidx.profileinstaller_profileinstaller.version",
+    "version": "1.4.1"
+  },
+  {
+    "file": "META-INF/androidx.recyclerview_recyclerview.version",
+    "version": "1.3.2"
+  },
+  {
+    "file": "META-INF/androidx.room_room-ktx.version",
+    "version": "2.8.4"
+  },
+  {
+    "file": "META-INF/androidx.room_room-paging.version",
+    "version": "2.8.4"
+  },
+  {
+    "file": "META-INF/androidx.room_room-runtime.version",
+    "version": "2.8.4"
+  },
+  {
+    "file": "META-INF/androidx.savedstate_savedstate-compose.version",
+    "version": "1.3.2"
+  },
+  {
+    "file": "META-INF/androidx.savedstate_savedstate-ktx.version",
+    "version": "1.3.2"
+  },
+  {
+    "file": "META-INF/androidx.savedstate_savedstate.version",
+    "version": "1.3.2"
+  },
+  {
+    "file": "META-INF/androidx.slidingpanelayout_slidingpanelayout.version",
+    "version": "1.2.0"
+  },
+  {
+    "file": "META-INF/androidx.sqlite_sqlite-framework.version",
+    "version": "2.6.2"
+  },
+  {
+    "file": "META-INF/androidx.sqlite_sqlite.version",
+    "version": "2.6.2"
+  },
+  {
+    "file": "META-INF/androidx.startup_startup-runtime.version",
+    "version": "1.1.1"
+  },
+  {
+    "file": "META-INF/androidx.swiperefreshlayout_swiperefreshlayout.version",
+    "version": "1.0.0"
+  },
+  {
+    "file": "META-INF/androidx.tracing_tracing-ktx.version",
+    "version": "1.2.0"
+  },
+  {
+    "file": "META-INF/androidx.tracing_tracing.version",
+    "version": "1.2.0"
+  },
+  {
+    "file": "META-INF/androidx.transition_transition.version",
+    "version": "1.6.0"
+  },
+  {
+    "file": "META-INF/androidx.vectordrawable_vectordrawable-animated.version",
+    "version": "1.2.0"
+  },
+  {
+    "file": "META-INF/androidx.vectordrawable_vectordrawable.version",
+    "version": "1.2.0"
+  },
+  {
+    "file": "META-INF/androidx.versionedparcelable_versionedparcelable.version",
+    "version": "1.1.1"
+  },
+  {
+    "file": "META-INF/androidx.viewpager2_viewpager2.version",
+    "version": "1.1.0"
+  },
+  {
+    "file": "META-INF/androidx.viewpager_viewpager.version",
+    "version": "1.0.0"
+  },
+  {
+    "file": "META-INF/androidx.window_window-core.version",
+    "version": "1.5.0"
+  },
+  {
+    "file": "META-INF/androidx.window_window.version",
+    "version": "1.5.0"
+  },
+  {
+    "file": "META-INF/androidx.work_work-runtime.version",
+    "version": "2.10.2"
+  },
+  {
+    "file": "META-INF/native-image/io.netty/netty-transport-classes-epoll/native-image.properties",
+    "version": null,
+    "client": null
+  },
+  {
+    "file": "firebase-analytics.properties",
+    "version": "22.1.0",
+    "client": "firebase-analytics"
+  },
+  {
+    "file": "firebase-annotations.properties",
+    "version": "16.2.0",
+    "client": "firebase-annotations"
+  },
+  {
+    "file": "firebase-encoders-proto.properties",
+    "version": "16.0.0",
+    "client": "firebase-encoders-proto"
+  },
+  {
+    "file": "firebase-encoders.properties",
+    "version": "17.0.0",
+    "client": "firebase-encoders"
+  },
+  {
+    "file": "firebase-iid-interop.properties",
+    "version": "17.1.0",
+    "client": "firebase-iid-interop"
+  },
+  {
+    "file": "firebase-measurement-connector.properties",
+    "version": "20.0.1",
+    "client": "firebase-measurement-connector"
+  },
+  {
+    "file": "play-services-ads-identifier.properties",
+    "version": "18.0.0",
+    "client": "play-services-ads-identifier"
+  },
+  {
+    "file": "play-services-base.properties",
+    "version": "18.5.0",
+    "client": "play-services-base"
+  },
+  {
+    "file": "play-services-basement.properties",
+    "version": "18.4.0",
+    "client": "play-services-basement"
+  },
+  {
+    "file": "play-services-cloud-messaging.properties",
+    "version": "17.2.0",
+    "client": "play-services-cloud-messaging"
+  },
+  {
+    "file": "play-services-location.properties",
+    "version": "21.3.0",
+    "client": "play-services-location"
+  },
+  {
+    "file": "play-services-maps.properties",
+    "version": "17.0.0",
+    "client": "play-services-maps"
+  },
+  {
+    "file": "play-services-measurement-api.properties",
+    "version": "22.1.0",
+    "client": "play-services-measurement-api"
+  },
+  {
+    "file": "play-services-measurement-base.properties",
+    "version": "22.1.0",
+    "client": "play-services-measurement-base"
+  },
+  {
+    "file": "play-services-measurement-impl.properties",
+    "version": "22.1.0",
+    "client": "play-services-measurement-impl"
+  },
+  {
+    "file": "play-services-measurement-sdk-api.properties",
+    "version": "22.1.0",
+    "client": "play-services-measurement-sdk-api"
+  },
+  {
+    "file": "play-services-measurement-sdk.properties",
+    "version": "22.1.0",
+    "client": "play-services-measurement-sdk"
+  },
+  {
+    "file": "play-services-measurement.properties",
+    "version": "22.1.0",
+    "client": "play-services-measurement"
+  },
+  {
+    "file": "play-services-stats.properties",
+    "version": "17.0.2",
+    "client": "play-services-stats"
+  },
+  {
+    "file": "play-services-tasks.properties",
+    "version": "18.2.0",
+    "client": "play-services-tasks"
+  }
+]

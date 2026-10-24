@@ -1,0 +1,30 @@
+E: network-security-config (line=2)
+    E: debug-overrides (line=3)
+        E: trust-anchors (line=4)
+            E: certificates (line=6)
+              A: src="user" (Raw: "user")
+    E: base-config (line=9)
+      A: cleartextTrafficPermitted=false
+    E: domain-config (line=10)
+      A: cleartextTrafficPermitted=true
+        E: domain (line=11)
+          A: includeSubdomains=true
+            T: '192.168.40.201'
+        E: domain (line=12)
+          A: includeSubdomains=true
+            T: '192.168.40.37'
+        E: domain (line=13)
+          A: includeSubdomains=true
+            T: 'amap.com'
+        E: domain (line=14)
+          A: includeSubdomains=true
+            T: '4399.com'
+        E: domain (line=15)
+          A: includeSubdomains=true
+            T: 'baidu.com'
+        E: domain (line=16)
+          A: includeSubdomains=true
+            T: 'iqiyi.com'
+        E: domain (line=17)
+          A: includeSubdomains=true
+            T: 'airdroid.com'

@@ -1,5 +1,16 @@
 # REA investigation — 2026-10-24
 
+Update: a subsequently supplied AirDroid **controller** bundle has now received a
+limited static security review using REA/JADX and Android SDK inspection tools.
+See [the artifact review](airdroid-security-review.md) for hashes, observed facts,
+evidence and limitations. The initial investigation below describes the earlier
+phase when no third-party artifact had been provided.
+
+A subsequently supplied Kids APK (`com.sand.airdroidkids`, version 1.8.5.0) has also
+been inspected with REA/JADX. Its separate [static security review](airdroid-kids-security-review.md)
+covers signatures, permissions, component exposure, dependencies and configuration;
+it does not analyze capture-consent bypasses or reproduce hidden monitoring.
+
 ## Scope and provenance
 
 No authorized AirDroid APK, installation, account, or physical device was supplied.

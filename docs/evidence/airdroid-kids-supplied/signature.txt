@@ -1,0 +1,17 @@
+Verifies
+Verified using v1 scheme (JAR signing): false
+Verified using v2 scheme (APK Signature Scheme v2): true
+Verified using v3 scheme (APK Signature Scheme v3): true
+Verified using v3.1 scheme (APK Signature Scheme v3.1): false
+Verified using v4 scheme (APK Signature Scheme v4): false
+Verified for SourceStamp: false
+Number of signers: 1
+Signer #1 certificate DN: OU=Sand Studio
+Signer #1 certificate SHA-256 digest: 5f718936b3e83b442dbe4b50ee6e0b0c8e7fea851fb14ce644614f1ba070ce63
+Signer #1 certificate SHA-1 digest: 45819d7212130ab8b7a8f35da0d43843d924b09e
+Signer #1 certificate MD5 digest: 6a2a5f41ed268a949301f7a85184e584
+Signer #1 key algorithm: RSA
+Signer #1 key size (bits): 1024
+Signer #1 public key SHA-256 digest: 546e3f4ca00266da9603890177bc2b1d00ab70479a34148ba234bf056b138579
+Signer #1 public key SHA-1 digest: d7f3b07f43ed4e7bac2f5bd34144b0b68f118834
+Signer #1 public key MD5 digest: e07d73deda615b715ceca3a7917f4a06

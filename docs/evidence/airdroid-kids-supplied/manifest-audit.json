@@ -1,0 +1,1253 @@
+{
+  "manifest": {
+    "versionCode": 10805000,
+    "versionName": "1.8.5.0",
+    "installLocation": 1,
+    "compileSdkVersion": 36,
+    "compileSdkVersionCodename": "16",
+    "package": "com.sand.airdroidkids",
+    "platformBuildVersionCode": 36,
+    "platformBuildVersionName": 16
+  },
+  "application": {
+    "theme": "@0x7f14000c",
+    "label": "@0x7f1302ed",
+    "icon": "@0x7f0802b3",
+    "name": ".ProtectedSandApp",
+    "allowBackup": false,
+    "largeHeap": true,
+    "supportsRtl": true,
+    "extractNativeLibs": false,
+    "resizeableActivity": false,
+    "networkSecurityConfig": "@0x7f16000a",
+    "roundIcon": "@0x7f0802b4",
+    "requestLegacyExternalStorage": true,
+    "pageSizeCompat": 32
+  },
+  "permissions": [
+    {
+      "tag": "uses-permission",
+      "name": "android.permission.ANSWER_PHONE_CALLS"
+    },
+    {
+      "tag": "uses-permission",
+      "name": "android.permission.CALL_PHONE",
+      "maxSdkVersion": 27
+    },
+    {
+      "tag": "uses-permission",
+      "name": "android.permission.READ_PHONE_STATE"
+    },
+    {
+      "tag": "uses-permission",
+      "name": "android.permission.READ_CALL_LOG"
+    },
+    {
+      "tag": "uses-permission",
+      "name": "android.permission.READ_CONTACTS"
+    },
+    {
+      "tag": "uses-permission",
+      "name": "android.permission.READ_SMS"
+    },
+    {
+      "tag": "uses-permission",
+      "name": "android.permission.RECEIVE_SMS"
+    },
+    {
+      "tag": "uses-permission",
+      "name": "android.permission.ACCESS_WIFI_STATE"
+    },
+    {
+      "tag": "uses-permission",
+      "name": "android.permission.CHANGE_WIFI_STATE"
+    },
+    {
+      "tag": "uses-permission",
+      "name": "android.permission.ACCESS_NETWORK_STATE"
+    },
+    {
+      "tag": "uses-permission",
+      "name": "android.permission.INTERNET"
+    },
+    {
+      "tag": "uses-permission",
+      "name": "android.permission.WAKE_LOCK"
+    },
+    {
+      "tag": "uses-permission",
+      "name": "android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS"
+    },
+    {
+      "tag": "uses-permission",
+      "name": "android.permission.RECEIVE_BOOT_COMPLETED"
+    },
+    {
+      "tag": "uses-permission",
+      "name": "android.permission.REQUEST_INSTALL_PACKAGES"
+    },
+    {
+      "tag": "uses-permission",
+      "name": "android.permission.REQUEST_DELETE_PACKAGES"
+    },
+    {
+      "tag": "uses-permission",
+      "name": "android.permission.FOREGROUND_SERVICE"
+    },
+    {
+      "tag": "uses-permission",
+      "name": "android.permission.FOREGROUND_SERVICE_CONNECTED_DEVICE"
+    },
+    {
+      "tag": "uses-permission",
+      "name": "android.permission.FOREGROUND_SERVICE_LOCATION"
+    },
+    {
+      "tag": "uses-permission",
+      "name": "android.permission.FOREGROUND_SERVICE_CAMERA"
+    },
+    {
+      "tag": "uses-permission",
+      "name": "android.permission.FOREGROUND_SERVICE_MEDIA_PROJECTION"
+    },
+    {
+      "tag": "uses-permission",
+      "name": "android.permission.FOREGROUND_SERVICE_MICROPHONE"
+    },
+    {
+      "tag": "uses-permission",
+      "name": "android.permission.CAMERA"
+    },
+    {
+      "tag": "uses-permission",
+      "name": "android.permission.FLASHLIGHT",
+      "protectionLevel": "0x00000000",
+      "permissionGroup": "android.permission-group.HARDWARE_CONTROLS"
+    },
+    {
+      "tag": "uses-permission",
+      "name": "android.permission.SYSTEM_ALERT_WINDOW"
+    },
+    {
+      "tag": "uses-permission",
+      "name": "android.permission.RECORD_AUDIO"
+    },
+    {
+      "tag": "uses-permission",
+      "name": "android.permission.ACCESS_FINE_LOCATION"
+    },
+    {
+      "tag": "uses-permission",
+      "name": "android.permission.ACCESS_COARSE_LOCATION"
+    },
+    {
+      "tag": "uses-permission",
+      "name": "android.permission.ACCESS_BACKGROUND_LOCATION"
+    },
+    {
+      "tag": "uses-permission",
+      "name": "android.permission.PACKAGE_USAGE_STATS"
+    },
+    {
+      "tag": "uses-permission",
+      "name": "android.permission.QUERY_ALL_PACKAGES"
+    },
+    {
+      "tag": "uses-permission",
+      "name": "android.permission.SCHEDULE_EXACT_ALARM"
+    },
+    {
+      "tag": "uses-permission",
+      "name": "android.permission.GET_ACCOUNTS",
+      "maxSdkVersion": 22
+    },
+    {
+      "tag": "uses-permission",
+      "name": "android.permission.VIBRATE"
+    },
+    {
+      "tag": "uses-permission",
+      "name": "android.permission.WRITE_EXTERNAL_STORAGE"
+    },
+    {
+      "tag": "uses-permission",
+      "name": "android.permission.READ_EXTERNAL_STORAGE"
+    },
+    {
+      "tag": "uses-permission",
+      "name": "android.permission.READ_MEDIA_IMAGES"
+    },
+    {
+      "tag": "uses-permission",
+      "name": "android.permission.READ_MEDIA_VIDEO"
+    },
+    {
+      "tag": "uses-permission",
+      "name": "android.permission.READ_MEDIA_VISUAL_USER_SELECTED"
+    },
+    {
+      "tag": "uses-permission",
+      "name": "android.permission.POST_NOTIFICATIONS"
+    },
+    {
+      "tag": "uses-permission",
+      "name": "android.permission.KILL_BACKGROUND_PROCESSES"
+    },
+    {
+      "tag": "uses-permission",
+      "name": "android.permission.CHANGE_NETWORK_STATE"
+    },
+    {
+      "tag": "uses-permission",
+      "name": "android.permission.BIND_NOTIFICATION_LISTENER_SERVICE"
+    },
+    {
+      "tag": "uses-permission",
+      "name": "android.permission.MODIFY_AUDIO_SETTINGS"
+    },
+    {
+      "tag": "uses-permission",
+      "name": "com.google.android.gms.permission.AD_ID"
+    },
+    {
+      "tag": "uses-permission",
+      "name": "android.permission.ACCESS_ADSERVICES_ATTRIBUTION"
+    },
+    {
+      "tag": "uses-permission",
+      "name": "android.permission.ACCESS_ADSERVICES_AD_ID"
+    },
+    {
+      "tag": "uses-permission",
+      "name": "com.sand.airdroidkids.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+    },
+    {
+      "tag": "uses-permission",
+      "name": "com.asus.msa.SupplementaryDID.ACCESS"
+    },
+    {
+      "tag": "uses-permission",
+      "name": "freemme.permission.msa"
+    }
+  ],
+  "components": [
+    {
+      "kind": "activity",
+      "name": "com.sand.airdroidkids.KidSplashActivity",
+      "exported": true,
+      "exported_explicit": true,
+      "permission": null,
+      "manifest_line": 91,
+      "browsable": true
+    },
+    {
+      "kind": "activity-alias",
+      "name": "com.sand.airdroidkids.KidSplashActivity_alias",
+      "exported": true,
+      "exported_explicit": true,
+      "permission": null,
+      "manifest_line": 110,
+      "browsable": false
+    },
+    {
+      "kind": "service",
+      "name": "com.sand.airdroidkid.common.services.JwtIntentService",
+      "exported": false,
+      "exported_explicit": false,
+      "permission": null,
+      "manifest_line": 120,
+      "browsable": false
+    },
+    {
+      "kind": "service",
+      "name": "com.sand.airdroidkid.common.services.ForwardTaskService",
+      "exported": false,
+      "exported_explicit": true,
+      "permission": null,
+      "manifest_line": 121,
+      "browsable": false
+    },
+    {
+      "kind": "service",
+      "name": "com.sand.airdroidkid.common.push.PushService",
+      "exported": false,
+      "exported_explicit": false,
+      "permission": null,
+      "manifest_line": 126,
+      "browsable": false
+    },
+    {
+      "kind": "service",
+      "name": "com.sand.airdroidkid.common.push.PushBindService",
+      "exported": false,
+      "exported_explicit": false,
+      "permission": null,
+      "manifest_line": 127,
+      "browsable": false
+    },
+    {
+      "kind": "service",
+      "name": "com.sand.airdroidkid.common.push.PushJobService",
+      "exported": false,
+      "exported_explicit": false,
+      "permission": "android.permission.BIND_JOB_SERVICE",
+      "manifest_line": 128,
+      "browsable": false
+    },
+    {
+      "kind": "service",
+      "name": "com.sand.airdroidkid.common.push.PushKeepLiveService",
+      "exported": false,
+      "exported_explicit": false,
+      "permission": null,
+      "manifest_line": 129,
+      "browsable": false
+    },
+    {
+      "kind": "service",
+      "name": "com.sand.airdroidkid.common.push.PushAssistService",
+      "exported": false,
+      "exported_explicit": false,
+      "permission": null,
+      "manifest_line": 130,
+      "browsable": false
+    },
+    {
+      "kind": "service",
+      "name": "com.amap.api.location.APSService",
+      "exported": false,
+      "exported_explicit": false,
+      "permission": null,
+      "manifest_line": 131,
+      "browsable": false
+    },
+    {
+      "kind": "service",
+      "name": "com.sand.airdroidkids.services.KidGeofenceService",
+      "exported": false,
+      "exported_explicit": false,
+      "permission": null,
+      "manifest_line": 132,
+      "browsable": false
+    },
+    {
+      "kind": "service",
+      "name": "com.sand.airdroidkids.services.KidFusedProviderLocationService",
+      "exported": false,
+      "exported_explicit": true,
+      "permission": null,
+      "manifest_line": 133,
+      "browsable": false
+    },
+    {
+      "kind": "service",
+      "name": "com.sand.airdroidkids.services.HandlePushCurrentLocationService",
+      "exported": false,
+      "exported_explicit": false,
+      "permission": null,
+      "manifest_line": 138,
+      "browsable": false
+    },
+    {
+      "kind": "service",
+      "name": "com.sand.airdroidkids.services.CurrentLocationService",
+      "exported": false,
+      "exported_explicit": false,
+      "permission": null,
+      "manifest_line": 139,
+      "browsable": false
+    },
+    {
+      "kind": "service",
+      "name": "com.sand.airdroidkids.services.DrivingTripService",
+      "exported": false,
+      "exported_explicit": true,
+      "permission": null,
+      "manifest_line": 140,
+      "browsable": false
+    },
+    {
+      "kind": "service",
+      "name": "com.sand.airdroidkids.services.ForwardHeartBeatMonitorService",
+      "exported": false,
+      "exported_explicit": false,
+      "permission": null,
+      "manifest_line": 141,
+      "browsable": false
+    },
+    {
+      "kind": "service",
+      "name": "com.sand.airdroidkids.services.PushMessageHandleService",
+      "exported": false,
+      "exported_explicit": true,
+      "permission": null,
+      "manifest_line": 142,
+      "browsable": false
+    },
+    {
+      "kind": "service",
+      "name": "com.sand.airdroidkids.webrtc.SandWebRTCService",
+      "exported": false,
+      "exported_explicit": true,
+      "permission": null,
+      "manifest_line": 149,
+      "browsable": false
+    },
+    {
+      "kind": "receiver",
+      "name": "com.sand.airdroidkid.common.push.PushKeepLiveReceiver",
+      "exported": false,
+      "exported_explicit": true,
+      "permission": null,
+      "manifest_line": 150,
+      "browsable": false
+    },
+    {
+      "kind": "receiver",
+      "name": "com.sand.airdroidkid.common.components.install.InstallResultReceiver",
+      "exported": true,
+      "exported_explicit": true,
+      "permission": null,
+      "manifest_line": 163,
+      "browsable": false
+    },
+    {
+      "kind": "activity",
+      "name": "com.sand.airdroidkids.ui.main.KidMainActivity",
+      "exported": false,
+      "exported_explicit": false,
+      "permission": null,
+      "manifest_line": 168,
+      "browsable": false
+    },
+    {
+      "kind": "activity",
+      "name": "com.sand.airdroidkids.ui.guide.KidGuideFragmentActivity",
+      "exported": false,
+      "exported_explicit": false,
+      "permission": null,
+      "manifest_line": 169,
+      "browsable": false
+    },
+    {
+      "kind": "activity",
+      "name": "com.sand.airdroidkids.ui.guide.KidGuideCheckListActivity",
+      "exported": false,
+      "exported_explicit": false,
+      "permission": null,
+      "manifest_line": 170,
+      "browsable": false
+    },
+    {
+      "kind": "activity",
+      "name": "com.sand.airdroidkids.ui.guide.KidHideIconActivity",
+      "exported": false,
+      "exported_explicit": false,
+      "permission": null,
+      "manifest_line": 171,
+      "browsable": false
+    },
+    {
+      "kind": "activity",
+      "name": "com.sand.airdroidkids.ui.guide.KidHideNotifyActivity",
+      "exported": false,
+      "exported_explicit": false,
+      "permission": null,
+      "manifest_line": 172,
+      "browsable": false
+    },
+    {
+      "kind": "activity",
+      "name": "com.sand.airdroidkids.ui.guide.KidBindProcessCompleteActivity",
+      "exported": false,
+      "exported_explicit": false,
+      "permission": null,
+      "manifest_line": 173,
+      "browsable": false
+    },
+    {
+      "kind": "activity",
+      "name": "com.sand.airdroidkids.ui.guide.KidExtraGuidePermissionActivity",
+      "exported": false,
+      "exported_explicit": false,
+      "permission": null,
+      "manifest_line": 174,
+      "browsable": false
+    },
+    {
+      "kind": "activity",
+      "name": "com.sand.airdroidkids.ui.KidAboutActivity",
+      "exported": false,
+      "exported_explicit": false,
+      "permission": null,
+      "manifest_line": 175,
+      "browsable": false
+    },
+    {
+      "kind": "activity",
+      "name": "com.sand.airdroidkids.ui.KidAppUpdateActivity",
+      "exported": false,
+      "exported_explicit": false,
+      "permission": null,
+      "manifest_line": 176,
+      "browsable": false
+    },
+    {
+      "kind": "activity",
+      "name": "com.sand.airdroidkids.ui.KidAppDownloadActivity",
+      "exported": false,
+      "exported_explicit": false,
+      "permission": null,
+      "manifest_line": 177,
+      "browsable": false
+    },
+    {
+      "kind": "activity",
+      "name": "com.sand.airdroidkids.webrtc.InitWebRTCScreenActivity",
+      "exported": false,
+      "exported_explicit": true,
+      "permission": null,
+      "manifest_line": 178,
+      "browsable": false
+    },
+    {
+      "kind": "activity",
+      "name": "com.sand.airdroidkids.webrtc.InitWebRTCCameraActivity",
+      "exported": false,
+      "exported_explicit": true,
+      "permission": null,
+      "manifest_line": 179,
+      "browsable": false
+    },
+    {
+      "kind": "activity",
+      "name": "com.sand.airdroidkids.webrtc.InitAudioActivity",
+      "exported": false,
+      "exported_explicit": true,
+      "permission": null,
+      "manifest_line": 180,
+      "browsable": false
+    },
+    {
+      "kind": "activity",
+      "name": "com.sand.airdroidkids.ui.main.KidLimitAppActivity",
+      "exported": false,
+      "exported_explicit": false,
+      "permission": null,
+      "manifest_line": 181,
+      "browsable": false
+    },
+    {
+      "kind": "activity",
+      "name": "com.sand.airdroidkids.ui.main.KidLimitPhoneActivity",
+      "exported": false,
+      "exported_explicit": false,
+      "permission": null,
+      "manifest_line": 182,
+      "browsable": false
+    },
+    {
+      "kind": "activity",
+      "name": "com.sand.airdroidkids.ui.main.KidLimitSettingActivity",
+      "exported": false,
+      "exported_explicit": false,
+      "permission": null,
+      "manifest_line": 183,
+      "browsable": false
+    },
+    {
+      "kind": "activity",
+      "name": "com.sand.airdroidkids.ui.main.KidAllowUseTimeVerifyPinCodeActivity",
+      "exported": false,
+      "exported_explicit": false,
+      "permission": null,
+      "manifest_line": 184,
+      "browsable": false
+    },
+    {
+      "kind": "activity",
+      "name": "com.sand.airdroidkids.ui.main.KidVerifyPinCodeActivity",
+      "exported": false,
+      "exported_explicit": false,
+      "permission": null,
+      "manifest_line": 185,
+      "browsable": false
+    },
+    {
+      "kind": "activity",
+      "name": "com.sand.airdroidkids.ui.permission.KidKeepAliveGuideActivity",
+      "exported": false,
+      "exported_explicit": false,
+      "permission": null,
+      "manifest_line": 186,
+      "browsable": false
+    },
+    {
+      "kind": "activity",
+      "name": "com.sand.airdroidkids.ui.KidFeedbackActivity",
+      "exported": true,
+      "exported_explicit": true,
+      "permission": null,
+      "manifest_line": 187,
+      "browsable": true
+    },
+    {
+      "kind": "activity",
+      "name": "com.sand.airdroidkids.ui.main.KidBindBrowserActivity",
+      "exported": true,
+      "exported_explicit": true,
+      "permission": "@0x7f1302f1",
+      "manifest_line": 197,
+      "browsable": false
+    },
+    {
+      "kind": "activity",
+      "name": "com.sand.airdroidkids.ui.KidServerStateListActivity",
+      "exported": false,
+      "exported_explicit": true,
+      "permission": null,
+      "manifest_line": 198,
+      "browsable": false
+    },
+    {
+      "kind": "activity",
+      "name": "com.sand.airdroidkids.ui.KidDrivingDebugActivity",
+      "exported": false,
+      "exported_explicit": true,
+      "permission": null,
+      "manifest_line": 199,
+      "browsable": false
+    },
+    {
+      "kind": "activity",
+      "name": "com.sand.airdroidkids.ui.KidUploadLogToJiraActivity",
+      "exported": false,
+      "exported_explicit": true,
+      "permission": null,
+      "manifest_line": 200,
+      "browsable": false
+    },
+    {
+      "kind": "activity",
+      "name": "com.sand.airdroidkids.ui.KidCompleteDeviceInfoActivity",
+      "exported": false,
+      "exported_explicit": false,
+      "permission": null,
+      "manifest_line": 201,
+      "browsable": false
+    },
+    {
+      "kind": "activity",
+      "name": "com.sand.airdroidkids.ui.main.KidParentSettingActivity",
+      "exported": false,
+      "exported_explicit": false,
+      "permission": null,
+      "manifest_line": 202,
+      "browsable": false
+    },
+    {
+      "kind": "activity",
+      "name": "com.sand.airdroidkids.ui.sos.KidSosActivity",
+      "exported": false,
+      "exported_explicit": false,
+      "permission": null,
+      "manifest_line": 203,
+      "browsable": false
+    },
+    {
+      "kind": "activity",
+      "name": "com.sand.airdroidkids.ui.guide.KidAccessibilityGuideActivity",
+      "exported": false,
+      "exported_explicit": false,
+      "permission": null,
+      "manifest_line": 204,
+      "browsable": false
+    },
+    {
+      "kind": "service",
+      "name": "com.sand.airdroidkids.services.DataCollectionService",
+      "exported": false,
+      "exported_explicit": true,
+      "permission": null,
+      "manifest_line": 205,
+      "browsable": false
+    },
+    {
+      "kind": "service",
+      "name": "com.sand.airdroidkids.services.AirDroidKeepLiveService",
+      "exported": false,
+      "exported_explicit": true,
+      "permission": null,
+      "manifest_line": 206,
+      "browsable": false
+    },
+    {
+      "kind": "service",
+      "name": "com.sand.airdroidkids.services.NotificationService",
+      "exported": false,
+      "exported_explicit": true,
+      "permission": "android.permission.BIND_NOTIFICATION_LISTENER_SERVICE",
+      "manifest_line": 207,
+      "browsable": false
+    },
+    {
+      "kind": "service",
+      "name": "com.sand.airdroidkids.vnc.RotationListenerService",
+      "exported": false,
+      "exported_explicit": true,
+      "permission": null,
+      "manifest_line": 212,
+      "browsable": false
+    },
+    {
+      "kind": "service",
+      "name": "com.sand.airdroidkids.services.KidFCMService",
+      "exported": false,
+      "exported_explicit": true,
+      "permission": null,
+      "manifest_line": 213,
+      "browsable": false
+    },
+    {
+      "kind": "service",
+      "name": "com.sand.airdroidkids.services.KidUmengPushMessageService",
+      "exported": false,
+      "exported_explicit": true,
+      "permission": "android.permission.BIND_JOB_SERVICE",
+      "manifest_line": 218,
+      "browsable": false
+    },
+    {
+      "kind": "service",
+      "name": "com.sand.airdroidkids.CameraPreviewService",
+      "exported": false,
+      "exported_explicit": true,
+      "permission": null,
+      "manifest_line": 219,
+      "browsable": false
+    },
+    {
+      "kind": "service",
+      "name": "com.sand.airdroidkids.services.AccessibilityLimitService",
+      "exported": true,
+      "exported_explicit": true,
+      "permission": "android.permission.BIND_ACCESSIBILITY_SERVICE",
+      "manifest_line": 220,
+      "browsable": false
+    },
+    {
+      "kind": "service",
+      "name": "com.sand.airdroidkids.services.SosService",
+      "exported": false,
+      "exported_explicit": true,
+      "permission": null,
+      "manifest_line": 226,
+      "browsable": false
+    },
+    {
+      "kind": "receiver",
+      "name": "com.sand.airdroidkids.KidLaunchReceiver",
+      "exported": true,
+      "exported_explicit": true,
+      "permission": null,
+      "manifest_line": 227,
+      "browsable": false
+    },
+    {
+      "kind": "receiver",
+      "name": "com.sand.airdroidkids.components.dm.KidDeviceAdminReceiver",
+      "exported": false,
+      "exported_explicit": true,
+      "permission": "android.permission.BIND_DEVICE_ADMIN",
+      "manifest_line": 240,
+      "browsable": false
+    },
+    {
+      "kind": "receiver",
+      "name": "com.sand.airdroidkids.servers.event.observers.KidNetworkCallbackReceiver",
+      "exported": true,
+      "exported_explicit": true,
+      "permission": null,
+      "manifest_line": 246,
+      "browsable": false
+    },
+    {
+      "kind": "receiver",
+      "name": "com.sand.airdroidkids.servers.event.observers.EventReceiver",
+      "exported": true,
+      "exported_explicit": true,
+      "permission": null,
+      "manifest_line": 257,
+      "browsable": false
+    },
+    {
+      "kind": "receiver",
+      "name": "com.sand.airdroidkids.SendDoStateReceiver",
+      "exported": true,
+      "exported_explicit": true,
+      "permission": null,
+      "manifest_line": 265,
+      "browsable": false
+    },
+    {
+      "kind": "provider",
+      "name": "androidx.core.content.FileProvider",
+      "exported": false,
+      "exported_explicit": true,
+      "permission": null,
+      "manifest_line": 270,
+      "browsable": false
+    },
+    {
+      "kind": "provider",
+      "name": "com.sand.airdroidkids.provider.LogFileProvider",
+      "exported": true,
+      "exported_explicit": true,
+      "permission": "com.sand.airdroidkids.permission.READ_LOGFILES",
+      "manifest_line": 273,
+      "browsable": false
+    },
+    {
+      "kind": "provider",
+      "name": "androidx.startup.InitializationProvider",
+      "exported": false,
+      "exported_explicit": true,
+      "permission": null,
+      "manifest_line": 274,
+      "browsable": false
+    },
+    {
+      "kind": "activity",
+      "name": "com.sand.airdroidkid.common.crash.DefaultCrashActivity",
+      "exported": false,
+      "exported_explicit": false,
+      "permission": null,
+      "manifest_line": 279,
+      "browsable": false
+    },
+    {
+      "kind": "activity",
+      "name": "com.sand.airdroidkid.common.ui.debug.UploadLogToJiraActivity",
+      "exported": false,
+      "exported_explicit": false,
+      "permission": null,
+      "manifest_line": 280,
+      "browsable": false
+    },
+    {
+      "kind": "activity",
+      "name": "com.sand.airdroidkid.common.ui.base.web.SandWebActivity",
+      "exported": false,
+      "exported_explicit": false,
+      "permission": null,
+      "manifest_line": 281,
+      "browsable": false
+    },
+    {
+      "kind": "activity",
+      "name": "com.sand.airdroidkid.common.ui.update.BaseAppUpdateActivity",
+      "exported": false,
+      "exported_explicit": false,
+      "permission": null,
+      "manifest_line": 282,
+      "browsable": false
+    },
+    {
+      "kind": "activity",
+      "name": "com.sand.airdroidkid.common.ui.update.BaseAppUpdateDownloadActivity",
+      "exported": false,
+      "exported_explicit": false,
+      "permission": null,
+      "manifest_line": 283,
+      "browsable": false
+    },
+    {
+      "kind": "activity",
+      "name": "com.sand.airdroidkid.common.ui.chatai.ChatAiWebActivity",
+      "exported": false,
+      "exported_explicit": false,
+      "permission": null,
+      "manifest_line": 284,
+      "browsable": false
+    },
+    {
+      "kind": "activity",
+      "name": "com.sand.airdroidkid.common.ui.chatroom.ChatRoomActivity",
+      "exported": false,
+      "exported_explicit": false,
+      "permission": null,
+      "manifest_line": 285,
+      "browsable": false
+    },
+    {
+      "kind": "activity",
+      "name": "com.sand.airdroidkid.common.ui.chatroom.search.ChatRoomSearchActivity",
+      "exported": false,
+      "exported_explicit": false,
+      "permission": null,
+      "manifest_line": 286,
+      "browsable": false
+    },
+    {
+      "kind": "activity",
+      "name": "com.sand.airdroidkid.common.ui.voip.CallActivity",
+      "exported": false,
+      "exported_explicit": false,
+      "permission": null,
+      "manifest_line": 287,
+      "browsable": false
+    },
+    {
+      "kind": "activity",
+      "name": "com.sand.airdroidkid.common.ui.report.ReportFriendActivity",
+      "exported": false,
+      "exported_explicit": false,
+      "permission": null,
+      "manifest_line": 288,
+      "browsable": false
+    },
+    {
+      "kind": "activity",
+      "name": "com.sand.airdroidkid.common.ui.chatroom.ChatRoomSettingActivity",
+      "exported": false,
+      "exported_explicit": false,
+      "permission": null,
+      "manifest_line": 289,
+      "browsable": false
+    },
+    {
+      "kind": "activity",
+      "name": "com.sand.airdroidkid.common.settings.ClearCacheActivity",
+      "exported": false,
+      "exported_explicit": false,
+      "permission": null,
+      "manifest_line": 290,
+      "browsable": false
+    },
+    {
+      "kind": "receiver",
+      "name": "com.sand.airdroidkid.common.receiver.UninstallResultReceiver",
+      "exported": false,
+      "exported_explicit": true,
+      "permission": null,
+      "manifest_line": 291,
+      "browsable": false
+    },
+    {
+      "kind": "service",
+      "name": "com.sand.airdroidkid.common.services.VoipService",
+      "exported": false,
+      "exported_explicit": false,
+      "permission": null,
+      "manifest_line": 292,
+      "browsable": false
+    },
+    {
+      "kind": "activity",
+      "name": "com.google.android.libraries.places.widget.AutocompleteActivity",
+      "exported": false,
+      "exported_explicit": true,
+      "permission": null,
+      "manifest_line": 293,
+      "browsable": false
+    },
+    {
+      "kind": "activity",
+      "name": "com.google.android.libraries.places.widget.BasicPlaceAutocompleteActivity",
+      "exported": false,
+      "exported_explicit": true,
+      "permission": null,
+      "manifest_line": 294,
+      "browsable": false
+    },
+    {
+      "kind": "activity",
+      "name": "com.google.android.libraries.places.widget.PlaceAutocompleteActivity",
+      "exported": false,
+      "exported_explicit": true,
+      "permission": null,
+      "manifest_line": 295,
+      "browsable": false
+    },
+    {
+      "kind": "activity",
+      "name": "com.google.android.libraries.places.widget.internal.photoviewer.PlacesLightboxActivity",
+      "exported": false,
+      "exported_explicit": true,
+      "permission": null,
+      "manifest_line": 296,
+      "browsable": false
+    },
+    {
+      "kind": "receiver",
+      "name": "com.google.firebase.iid.FirebaseInstanceIdReceiver",
+      "exported": true,
+      "exported_explicit": true,
+      "permission": "com.google.android.c2dm.permission.SEND",
+      "manifest_line": 297,
+      "browsable": false
+    },
+    {
+      "kind": "service",
+      "name": "com.google.firebase.messaging.FirebaseMessagingService",
+      "exported": false,
+      "exported_explicit": true,
+      "permission": null,
+      "manifest_line": 303,
+      "browsable": false
+    },
+    {
+      "kind": "service",
+      "name": "com.google.firebase.components.ComponentDiscoveryService",
+      "exported": false,
+      "exported_explicit": true,
+      "permission": null,
+      "manifest_line": 308,
+      "browsable": false
+    },
+    {
+      "kind": "activity",
+      "name": "com.google.android.gms.common.api.GoogleApiActivity",
+      "exported": false,
+      "exported_explicit": true,
+      "permission": null,
+      "manifest_line": 322,
+      "browsable": false
+    },
+    {
+      "kind": "service",
+      "name": "com.google.firebase.sessions.SessionLifecycleService",
+      "exported": false,
+      "exported_explicit": true,
+      "permission": null,
+      "manifest_line": 324,
+      "browsable": false
+    },
+    {
+      "kind": "provider",
+      "name": "com.google.firebase.provider.FirebaseInitProvider",
+      "exported": false,
+      "exported_explicit": true,
+      "permission": null,
+      "manifest_line": 325,
+      "browsable": false
+    },
+    {
+      "kind": "service",
+      "name": "androidx.work.impl.background.systemalarm.SystemAlarmService",
+      "exported": false,
+      "exported_explicit": true,
+      "permission": null,
+      "manifest_line": 326,
+      "browsable": false
+    },
+    {
+      "kind": "service",
+      "name": "androidx.work.impl.background.systemjob.SystemJobService",
+      "exported": true,
+      "exported_explicit": true,
+      "permission": "android.permission.BIND_JOB_SERVICE",
+      "manifest_line": 327,
+      "browsable": false
+    },
+    {
+      "kind": "service",
+      "name": "androidx.work.impl.foreground.SystemForegroundService",
+      "exported": false,
+      "exported_explicit": true,
+      "permission": null,
+      "manifest_line": 328,
+      "browsable": false
+    },
+    {
+      "kind": "receiver",
+      "name": "androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver",
+      "exported": false,
+      "exported_explicit": true,
+      "permission": null,
+      "manifest_line": 329,
+      "browsable": false
+    },
+    {
+      "kind": "receiver",
+      "name": "androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy",
+      "exported": false,
+      "exported_explicit": true,
+      "permission": null,
+      "manifest_line": 330,
+      "browsable": false
+    },
+    {
+      "kind": "receiver",
+      "name": "androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy",
+      "exported": false,
+      "exported_explicit": true,
+      "permission": null,
+      "manifest_line": 336,
+      "browsable": false
+    },
+    {
+      "kind": "receiver",
+      "name": "androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy",
+      "exported": false,
+      "exported_explicit": true,
+      "permission": null,
+      "manifest_line": 342,
+      "browsable": false
+    },
+    {
+      "kind": "receiver",
+      "name": "androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy",
+      "exported": false,
+      "exported_explicit": true,
+      "permission": null,
+      "manifest_line": 348,
+      "browsable": false
+    },
+    {
+      "kind": "receiver",
+      "name": "androidx.work.impl.background.systemalarm.RescheduleReceiver",
+      "exported": false,
+      "exported_explicit": true,
+      "permission": null,
+      "manifest_line": 353,
+      "browsable": false
+    },
+    {
+      "kind": "receiver",
+      "name": "androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver",
+      "exported": false,
+      "exported_explicit": true,
+      "permission": null,
+      "manifest_line": 360,
+      "browsable": false
+    },
+    {
+      "kind": "receiver",
+      "name": "androidx.work.impl.diagnostics.DiagnosticsReceiver",
+      "exported": true,
+      "exported_explicit": true,
+      "permission": "android.permission.DUMP",
+      "manifest_line": 365,
+      "browsable": false
+    },
+    {
+      "kind": "service",
+      "name": "androidx.room.MultiInstanceInvalidationService",
+      "exported": false,
+      "exported_explicit": true,
+      "permission": null,
+      "manifest_line": 370,
+      "browsable": false
+    },
+    {
+      "kind": "service",
+      "name": "androidx.camera.core.impl.MetadataHolderService",
+      "exported": false,
+      "exported_explicit": true,
+      "permission": null,
+      "manifest_line": 371,
+      "browsable": false
+    },
+    {
+      "kind": "receiver",
+      "name": "com.google.android.gms.measurement.AppMeasurementReceiver",
+      "exported": false,
+      "exported_explicit": true,
+      "permission": null,
+      "manifest_line": 374,
+      "browsable": false
+    },
+    {
+      "kind": "service",
+      "name": "com.google.android.gms.measurement.AppMeasurementService",
+      "exported": false,
+      "exported_explicit": true,
+      "permission": null,
+      "manifest_line": 375,
+      "browsable": false
+    },
+    {
+      "kind": "service",
+      "name": "com.google.android.gms.measurement.AppMeasurementJobService",
+      "exported": false,
+      "exported_explicit": true,
+      "permission": "android.permission.BIND_JOB_SERVICE",
+      "manifest_line": 376,
+      "browsable": false
+    },
+    {
+      "kind": "provider",
+      "name": "com.lzf.easyfloat.EasyFloatInitializer",
+      "exported": false,
+      "exported_explicit": true,
+      "permission": null,
+      "manifest_line": 381,
+      "browsable": false
+    },
+    {
+      "kind": "receiver",
+      "name": "androidx.profileinstaller.ProfileInstallReceiver",
+      "exported": true,
+      "exported_explicit": true,
+      "permission": "android.permission.DUMP",
+      "manifest_line": 382,
+      "browsable": false
+    },
+    {
+      "kind": "service",
+      "name": "com.google.android.datatransport.runtime.backends.TransportBackendDiscovery",
+      "exported": false,
+      "exported_explicit": true,
+      "permission": null,
+      "manifest_line": 396,
+      "browsable": false
+    },
+    {
+      "kind": "service",
+      "name": "com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService",
+      "exported": false,
+      "exported_explicit": true,
+      "permission": "android.permission.BIND_JOB_SERVICE",
+      "manifest_line": 399,
+      "browsable": false
+    },
+    {
+      "kind": "receiver",
+      "name": "com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver",
+      "exported": false,
+      "exported_explicit": true,
+      "permission": null,
+      "manifest_line": 400,
+      "browsable": false
+    }
+  ],
+  "collection_metadata": [
+    {
+      "name": "com.google.firebase.messaging.default_notification_icon",
+      "value": null
+    },
+    {
+      "name": "com.google.firebase.messaging.default_notification_color",
+      "value": null
+    },
+    {
+      "name": "com.google.firebase.messaging.default_notification_channel_id",
+      "value": "@0x7f13022d"
+    }
+  ],
+  "custom_permissions": [
+    {
+      "name": "@0x7f1302f1",
+      "protectionLevel": "0x00000002"
+    },
+    {
+      "name": "com.sand.airdroidkids.permission.READ_LOGFILES",
+      "protectionLevel": "0x00000002"
+    },
+    {
+      "name": "com.sand.airdroidkids.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+      "protectionLevel": "0x00000002"
+    }
+  ]
+}

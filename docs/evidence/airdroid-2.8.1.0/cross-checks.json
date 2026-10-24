@@ -1,0 +1,16 @@
+{
+  "package": "com.sand.airdroidkidp",
+  "version": "2.8.1.0",
+  "permissions": 31,
+  "components": {
+    "receiver": 18,
+    "service": 27,
+    "activity": 115,
+    "provider": 4
+  },
+  "exported": 12,
+  "exported_without_manifest_permission": 7,
+  "all_split_signatures_match": true,
+  "rea_aapt_permissions_agree": true,
+  "base_apk_sha256": "661bf8f19f1f4d7e77f85542169723617ccecea53bf6c641c00e8852e45c546b"
+}

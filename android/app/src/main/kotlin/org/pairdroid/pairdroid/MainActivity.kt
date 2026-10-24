@@ -20,6 +20,8 @@ class MainActivity : FlutterActivity() {
     private val engine get() = LanEngine.get(this)
     override fun configureFlutterEngine(flutterEngine: FlutterEngine) {
         super.configureFlutterEngine(flutterEngine)
+        // Auto-start the child service silently if this is the child flavor and permissions are ready.
+        if (packageName.endsWith(".child")) autoStartServiceIfReady()
         MethodChannel(flutterEngine.dartExecutor.binaryMessenger,"org.pairdroid/native").setMethodCallHandler { call, result ->
             val args = runCatching { JSONObject(call.arguments as? String ?: "{}") }.getOrElse { result.error("arguments","Invalid JSON",null); return@setMethodCallHandler }
             fun success(value: Any = JSONObject()) = result.success(value.toString())
@@ -57,8 +59,10 @@ class MainActivity : FlutterActivity() {
                                 "revoke" -> { engine.revoke(); JSONObject() }
                                 "clearPolicy" -> { engine.data.clearPolicy(); engine.journal.add("Policy cleared on device"); JSONObject() }
                                 "rotate" -> { engine.rotate(); JSONObject() }
-                                "stopSharing" -> { engine.stopSharing(); JSONObject() }
+                                // Park (not full stop) — projection token stays alive for silent reconnect.
+                                "stopSharing" -> { engine.parkSharing(); JSONObject() }
                                 "forget" -> { engine.forget(args.getString("pin")); JSONObject() }
+                                "setAutoApprovePin" -> { engine.setAutoApprovePin(args.getString("pin")); JSONObject() }
                                 "rpc" -> engine.rpc(args.getJSONObject("target"),args.getString("cmd"),args.optJSONObject("payload") ?: JSONObject())
                                 else -> throw IllegalArgumentException("Unknown method")
                             }
@@ -67,6 +71,14 @@ class MainActivity : FlutterActivity() {
                     }
                 }
             } catch(e: Exception) { result.error("native",e.message,null) }
+        }
+    }
+    /** Silently starts the LAN service on child launch if notification permission is granted. */
+    private fun autoStartServiceIfReady() {
+        val notifOk = Build.VERSION.SDK_INT < 33 || checkSelfPermission(Manifest.permission.POST_NOTIFICATIONS) == PackageManager.PERMISSION_GRANTED
+        val networkOk = Build.VERSION.SDK_INT < 37 || checkSelfPermission("android.permission.ACCESS_LOCAL_NETWORK") == PackageManager.PERMISSION_GRANTED
+        if (notifOk && networkOk) {
+            startForegroundService(Intent(this, LanService::class.java))
         }
     }
     @Deprecated("Activity result bridge required by Flutter embedding")

@@ -1,0 +1,74 @@
+[
+  {
+    "file": "lib/arm64-v8a/libandroidx.graphics.path.so",
+    "bytes": 10096
+  },
+  {
+    "file": "lib/arm64-v8a/libdexprotector.so",
+    "bytes": 446421
+  },
+  {
+    "file": "lib/arm64-v8a/libimage_processing_util_jni.so",
+    "bytes": 29008
+  },
+  {
+    "file": "lib/arm64-v8a/libjingle_peerconnection_so.so",
+    "bytes": 12459032
+  },
+  {
+    "file": "lib/arm64-v8a/libmmkv.so",
+    "bytes": 597000
+  },
+  {
+    "file": "lib/arm64-v8a/libsurface_util_jni.so",
+    "bytes": 4832
+  },
+  {
+    "file": "lib/arm64-v8a/libtensorflowlite_jni.so",
+    "bytes": 4320480
+  },
+  {
+    "file": "lib/arm64-v8a/libyuv.so",
+    "bytes": 462432
+  },
+  {
+    "file": "lib/arm64-v8a/libyuv_utils.so",
+    "bytes": 11824
+  },
+  {
+    "file": "lib/armeabi-v7a/libandroidx.graphics.path.so",
+    "bytes": 7252
+  },
+  {
+    "file": "lib/armeabi-v7a/libdexprotector.so",
+    "bytes": 394566
+  },
+  {
+    "file": "lib/armeabi-v7a/libimage_processing_util_jni.so",
+    "bytes": 20380
+  },
+  {
+    "file": "lib/armeabi-v7a/libjingle_peerconnection_so.so",
+    "bytes": 7023612
+  },
+  {
+    "file": "lib/armeabi-v7a/libmmkv.so",
+    "bytes": 371332
+  },
+  {
+    "file": "lib/armeabi-v7a/libsurface_util_jni.so",
+    "bytes": 3440
+  },
+  {
+    "file": "lib/armeabi-v7a/libtensorflowlite_jni.so",
+    "bytes": 2867532
+  },
+  {
+    "file": "lib/armeabi-v7a/libyuv.so",
+    "bytes": 272300
+  },
+  {
+    "file": "lib/armeabi-v7a/libyuv_utils.so",
+    "bytes": 18276
+  }
+]

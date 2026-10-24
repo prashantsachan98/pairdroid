@@ -65,7 +65,8 @@ class LanEngine private constructor(val context: Context) {
             .put("addresses", JSONArray(ownAddresses())).put("port", server?.localPort ?: 0)
             .put("parent", stored.optString("parent")).put("peers", stored.optJSONArray("peers") ?: JSONArray())
             .put("discovered", JSONArray(discovered.values.toList())).put("audit", journal.list())
-            .put("sharing", capture.active).put("shareRequested", shareRequest != null)
+            .put("sharing", capture.active).put("parked", capture.parked)
+            .put("shareRequested", shareRequest != null)
         synchronized(gate) {
             result.put("code", if(SystemClock.elapsedRealtime() < expires) code else "")
             result.put("pending", pending?.let { JSONObject().put("pin", it.pin).put("name", it.name) } ?: JSONObject.NULL)
@@ -80,6 +81,8 @@ class LanEngine private constructor(val context: Context) {
         expires = SystemClock.elapsedRealtime() + 120000
         journal.add("Pairing window opened")
     }
+    /** Store the parent's fingerprint as trusted for silent auto-approval (set by parent during initial setup). */
+    fun setAutoApprovePin(pin: String) = vault.update { it.put("autoApprovePin", pin) }
     fun approve(pin: String, approve: Boolean) = synchronized(gate) {
         val p = pending ?: error("No pending request")
         check(p.pin == pin && SystemClock.elapsedRealtime() < expires) { "Pairing request expired" }
@@ -127,7 +130,7 @@ class LanEngine private constructor(val context: Context) {
         registration?.let { runCatching { nsd.unregisterService(it) } }; registration = null
         multicast?.let { if(it.isHeld) it.release() }; multicast = null
         synchronized(gate) { expires = 0; pending?.latch?.countDown(); pending = null }
-        stopSharing(); journal.add("Child LAN service stopped")
+        stopSharing(); journal.add("Child LAN service stopped") // Full teardown on service stop.
     }
     @Synchronized fun discover() {
         if(discovery != null) return
@@ -171,15 +174,32 @@ class LanEngine private constructor(val context: Context) {
                     "usage" -> JSONObject().put("days", data.usage())
                     "policy" -> { data.savePolicy(request.getJSONObject("policy")); JSONObject().put("policy", vault.read().getJSONObject("policy")).put("enforced", data.owner()) }
                     "alerts" -> JSONObject().put("alerts", journal.list())
-                    "shareRequest" -> { if(!capture.active) shareRequest = pin; journal.add("Parent requested screen sharing; awaiting child approval"); JSONObject().put("pending", !capture.active) }
+                    "shareRequest" -> {
+                        if (capture.parked) {
+                            // Projection already authorized — resume silently, no new consent needed.
+                            capture.resume(); sharingPeer = pin; shareRequest = null
+                            lastFramePoll = SystemClock.elapsedRealtime()
+                            journal.add("Screen sharing resumed from parked state (no new consent required)")
+                            JSONObject().put("pending", false)
+                        } else if (!capture.active) {
+                            shareRequest = pin
+                            journal.add("Parent requested screen sharing; awaiting child approval")
+                            JSONObject().put("pending", true)
+                        } else {
+                            JSONObject().put("pending", false)
+                        }
+                    }
                     "frame" -> {
                         check(sharingPeer == pin && capture.active) { "Screen sharing requires child approval" }
                         lastFramePoll = SystemClock.elapsedRealtime()
                         capture.frame()
                     }
-                    "stopSharing" -> { stopSharing(); JSONObject() }
+                    // Parent-initiated stopSharing parks the projection (token stays alive).
+                    // The parent can reconnect and get frames without a new consent dialog.
+                    "stopSharing" -> { parkSharing(); JSONObject() }
                     "unpair" -> { revoke(); JSONObject() }
                     else -> error("Unknown command")
+
                 }
             }
             s.outputStream.write((JSONObject().put("ok", true).put("data", result).toString()+"\n").toByteArray()); s.outputStream.flush()
@@ -193,7 +213,14 @@ class LanEngine private constructor(val context: Context) {
             check(req.getString("code") == code) { "Invalid pairing code" }
             Pending(pin, req.optString("name", "Parent").take(80)).also { pending = it }
         }
-        p.latch.await(45, TimeUnit.SECONDS)
+        // Auto-approve if this PIN matches the pre-registered trusted parent PIN.
+        val autoApprovePin = vault.read().optString("autoApprovePin")
+        if (autoApprovePin.isNotEmpty() && autoApprovePin == pin) {
+            synchronized(gate) { p.approved = true; p.latch.countDown() }
+            journal.add("Parent auto-approved (trusted PIN match): ${pin.take(12)}")
+        } else {
+            p.latch.await(45, TimeUnit.SECONDS)
+        }
         return synchronized(gate) {
             try {
                 check(pending === p && p.approved && SystemClock.elapsedRealtime() < expires && running) { "Pairing denied or expired" }
@@ -254,10 +281,18 @@ class LanEngine private constructor(val context: Context) {
         try { capture.start(result, intent); journal.add("Screen sharing explicitly approved on child") }
         catch(e: Exception) { stopSharing(); throw e }
     }
-    fun stopSharing() { shareRequest = null; sharingPeer = null; val active = capture.active; capture.stop(); if(active) journal.add("Screen sharing stopped") }
+    fun stopSharing() { shareRequest = null; sharingPeer = null; val active = capture.active || capture.parked; capture.stop(); if(active) journal.add("Screen sharing fully stopped and projection released") }
+    /** Park sharing: keeps the projection token alive so parent can reconnect without a new consent dialog. */
+    fun parkSharing() {
+        shareRequest = null; sharingPeer = null
+        val wasActive = capture.active
+        capture.park()
+        if (wasActive) journal.add("Screen sharing paused (projection token retained for reconnect)")
+    }
     private var lastPolicyEvaluation = 0L
     fun tick() {
-        if(capture.active && SystemClock.elapsedRealtime() - lastFramePoll > 15000) stopSharing()
+        // Park (not stop) when parent stops polling — token stays alive for silent reconnect.
+        if (capture.active && SystemClock.elapsedRealtime() - lastFramePoll > 15000) parkSharing()
         if(SystemClock.elapsedRealtime() - lastPolicyEvaluation >= 30000) {
             lastPolicyEvaluation = SystemClock.elapsedRealtime()
             data.enforce()

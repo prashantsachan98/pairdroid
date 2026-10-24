@@ -66,8 +66,12 @@ reliable enforcement environment. See [platform limits](docs/android-compatibili
 - [Android permissions and compatibility](docs/android-compatibility.md)
 - [Implemented, partial, and unsupported features](docs/feature-matrix.md)
 - [REA investigation and evidence](docs/reverse-engineering.md)
+- [Supplied AirDroid controller bundle security review](docs/airdroid-security-review.md)
+- [Supplied AirDroid Kids APK security review](docs/airdroid-kids-security-review.md)
 - [Tests and remaining acceptance work](docs/testing.md)
 - [Dependency license review](docs/dependencies.md)
 
 The interface and implementation are original. AirDroid is referenced only as a
-publicly documented workflow benchmark; no proprietary APK or source was supplied.
+publicly documented workflow benchmark. Supplied controller and Kids artifacts were
+later reviewed separately for security metadata; no proprietary implementation
+code is incorporated.

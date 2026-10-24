@@ -1,0 +1,32 @@
+[
+  {
+    "file": "base.apk",
+    "verified": true,
+    "certificate_sha256": "5f718936b3e83b442dbe4b50ee6e0b0c8e7fea851fb14ce644614f1ba070ce63",
+    "key_algorithm": "RSA",
+    "key_bits": "1024",
+    "v2": "true",
+    "v3": "true",
+    "source_stamp": "true"
+  },
+  {
+    "file": "split_config.arm64_v8a.apk",
+    "verified": true,
+    "certificate_sha256": "5f718936b3e83b442dbe4b50ee6e0b0c8e7fea851fb14ce644614f1ba070ce63",
+    "key_algorithm": "RSA",
+    "key_bits": "1024",
+    "v2": "true",
+    "v3": "true",
+    "source_stamp": "true"
+  },
+  {
+    "file": "split_config.armeabi_v7a.apk",
+    "verified": true,
+    "certificate_sha256": "5f718936b3e83b442dbe4b50ee6e0b0c8e7fea851fb14ce644614f1ba070ce63",
+    "key_algorithm": "RSA",
+    "key_bits": "1024",
+    "v2": "true",
+    "v3": "true",
+    "source_stamp": "true"
+  }
+]
