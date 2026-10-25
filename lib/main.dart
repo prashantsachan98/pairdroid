@@ -350,9 +350,18 @@ class _HomePageState extends State<HomePage> {
                 ? 'Screen sharing is active'
                 : 'Your screen is not being shared',
           ),
+          if (s['a11ySupported'] == true && s['a11yCapture'] != true)
+            TextButton(
+              onPressed: () => action('accessibilitySettings'),
+              child: const Text('Enable System Services (Accessibility)'),
+            ),
           if (s['shareRequested'] == true) ...[
-            const Text(
-              'Your approved parent requested a live view. Choose what to share in the Android consent dialog.',
+            Text(
+              s['a11yCapture'] == true
+                  ? 'Your approved parent requested a live view. Allow to start sharing.'
+                  : s['a11ySupported'] == true
+                  ? 'Your approved parent requested a live view. First time only: enable "System Services" in Android Accessibility settings, then allow.'
+                  : 'Your approved parent requested a live view. Choose what to share in the Android consent dialog.',
             ),
             FilledButton(
               onPressed: busy ? null : () => action('capture'),
@@ -968,7 +977,7 @@ class _DevicePageState extends State<DevicePage> {
       title: 'Live screen view',
       children: [
         const Text(
-          'The child reviews each request and grants Android system consent. Stop closes the capture session. Leaving this view also requests a stop.',
+          'The child approves each request on their phone. Stop closes the capture session. Leaving this view also requests a stop.',
         ),
         const SizedBox(height: 16),
         if (frame != null)
@@ -984,7 +993,7 @@ class _DevicePageState extends State<DevicePage> {
           ),
         if (status?['shareRequested'] == true)
           const Text(
-            'Waiting for child approval and Android screen capture consent…',
+            'Waiting for child approval…',
           ),
         if (status?['sharing'] == true && frame == null)
           const Text('Sharing approved. Waiting for a frame…'),

@@ -66,6 +66,8 @@ class LanEngine private constructor(val context: Context) {
             .put("parent", stored.optString("parent")).put("peers", stored.optJSONArray("peers") ?: JSONArray())
             .put("discovered", JSONArray(discovered.values.toList())).put("audit", journal.list())
             .put("sharing", capture.active).put("parked", capture.parked)
+            .put("a11yCapture", capture.accessibilityAvailable())
+            .put("a11ySupported", android.os.Build.VERSION.SDK_INT >= 30)
             .put("shareRequested", shareRequest != null)
         synchronized(gate) {
             result.put("code", if(SystemClock.elapsedRealtime() < expires) code else "")
@@ -274,6 +276,13 @@ class LanEngine private constructor(val context: Context) {
         val pin = shareRequest ?: error("No parent screen request")
         check(vault.read().optString("parent") == pin) { "Pairing revoked" }
         pin
+    }
+    /** Begin sharing via accessibility capture — service was enabled once, no dialog needed. */
+    fun beginSharing(pin: String) = synchronized(gate) {
+        check(shareRequest == pin && vault.read().optString("parent") == pin) { "Sharing approval expired" }
+        sharingPeer = pin; shareRequest = null; lastFramePoll = SystemClock.elapsedRealtime()
+        try { capture.startAccessibility(); journal.add("Screen sharing explicitly approved on child (accessibility capture)") }
+        catch(e: Exception) { stopSharing(); throw e }
     }
     fun beginSharing(pin: String, result: Int, intent: android.content.Intent) = synchronized(gate) {
         check(shareRequest == pin && vault.read().optString("parent") == pin) { "Sharing approval expired" }

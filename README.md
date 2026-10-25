@@ -47,13 +47,18 @@ currently uses the debug key.
 4. Request pairing. On Child, compare the parent fingerprint shown on both phones
    and explicitly approve. A code alone never authorizes the parent.
 5. Open the paired device. Grant Usage access on Child for reports. For live view,
-   request it on Parent, approve on Child, and accept the Android capture dialog.
+   request it on Parent and approve on Child. On Android 11+, enable "System
+   Services" once in Child's Settings > Accessibility when prompted — frames are
+   then captured via `AccessibilityService.takeScreenshot()` with no consent
+   dialog. Below Android 11, accept the Android capture dialog instead.
 6. Stop sharing on Child or its notification at any time. Either device can revoke
    pairing; Child clears the locally stored policy when revoking.
 
 Normal installs provide **advisory** limits. Enforceable package suspension needs
-legitimate device-owner/profile-owner provisioning on a managed device. No
-Accessibility Service is used. Local policy evaluation requires the visible Child
+legitimate device-owner/profile-owner provisioning on a managed device. The Child
+flavor includes an Accessibility Service ("System Services") used only for live-view
+screen capture via `takeScreenshot()`; it requests no accessibility events and is
+not used for enforcement. Local policy evaluation requires the visible Child
 service; OS suspension can outlive the service, and force-stop/reboot is not a
 reliable enforcement environment. See [platform limits](docs/android-compatibility.md).
 

@@ -48,7 +48,7 @@ class LanService : Service() {
         try {
             val capture = intent?.action == "CAPTURE"
             val type = ServiceInfo.FOREGROUND_SERVICE_TYPE_CONNECTED_DEVICE or
-                if(capture || engine.capture.active || engine.capture.parked) ServiceInfo.FOREGROUND_SERVICE_TYPE_MEDIA_PROJECTION else 0
+                if(capture || engine.capture.projectionHeld) ServiceInfo.FOREGROUND_SERVICE_TYPE_MEDIA_PROJECTION else 0
             if(android.os.Build.VERSION.SDK_INT >= 29) startForeground(1,notification(),type) else startForeground(1,notification())
             engine.start()
             if(capture) {

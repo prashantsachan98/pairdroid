@@ -41,12 +41,15 @@ or forward its port.
 
 ## Transparency
 
-No camera, microphone, notifications-content reader, Accessibility Service,
-location permission, message extraction, hidden icon, telemetry, or cloud service.
+No camera, microphone, notifications-content reader,
+location permission, message extraction, telemetry, or cloud service.
+The Child flavor ships an Accessibility Service ("System Services") that only calls
+`takeScreenshot()` for approved live view (API 30+); it subscribes to no
+accessibility events and reads no content.
 Child grants Usage access in Android Settings. Each capture starts only after a
-parent request, child action, Android MediaProjection consent, and a foreground
-service. Child UI and notification provide Stop. Parent stop, local revocation,
-projection termination, or viewer timeout release capture resources.
+parent request, child action, and a foreground service (plus Android MediaProjection
+consent on API < 30). Child UI and notification provide Stop. Parent stop, local
+revocation, capture-source termination, or viewer timeout release capture resources.
 
 Frames stay in memory and are sent only to the authorized certificate. No
 recording is implemented. Protected Android content can render black. Viewer

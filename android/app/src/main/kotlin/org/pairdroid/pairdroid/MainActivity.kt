@@ -44,10 +44,24 @@ class MainActivity : FlutterActivity() {
                     }
                     "stop" -> { stopService(Intent(this,LanService::class.java)); success() }
                     "capture" -> {
-                        check(consentPeer == null) { "System consent already pending" }
-                        consentPeer = engine.approveSharing()
-                        startActivityForResult(getSystemService(MediaProjectionManager::class.java).createScreenCaptureIntent(),30); success()
+                        val pin = engine.approveSharing()
+                        if(Build.VERSION.SDK_INT >= 30) {
+                            if(engine.capture.accessibilityAvailable()) {
+                                // Accessibility capture enabled once — start immediately, no dialog.
+                                engine.beginSharing(pin)
+                            } else {
+                                // One-time setup: enable "System Services" in Accessibility, then approve again.
+                                engine.journal.add("Accessibility capture not enabled; opening Settings for one-time setup")
+                                startActivity(Intent(Settings.ACTION_ACCESSIBILITY_SETTINGS))
+                            }
+                        } else {
+                            check(consentPeer == null) { "System consent already pending" }
+                            consentPeer = pin
+                            startActivityForResult(getSystemService(MediaProjectionManager::class.java).createScreenCaptureIntent(),30)
+                        }
+                        success()
                     }
+                    "accessibilitySettings" -> { startActivity(Intent(Settings.ACTION_ACCESSIBILITY_SETTINGS)); success() }
                     else -> work.execute {
                         try {
                             val value: Any = when(call.method) {
