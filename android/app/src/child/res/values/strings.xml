@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="mirror_service_description">Captures screen frames for live view with the paired parent device. Nothing else is read or recorded.</string>
+</resources>

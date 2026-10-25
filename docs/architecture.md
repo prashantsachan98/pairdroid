@@ -7,7 +7,7 @@ Flutter StatefulWidgets own short-lived presentation state; a dependency-heavy
 state management layer is unnecessary at this size. No network or enforcement
 lifecycle relies on a Dart isolate remaining alive.
 
-- `MainActivity`: user permissions, MethodChannel worker dispatch, capture consent.
+- `MainActivity`: user permissions, MethodChannel worker dispatch, capture approval.
 - `LanEngine`: singleton per application process; bounded TLS listener, enrollment
   gate, command authorization, NSD discovery and pinned RPC client.
 - `Vault`: AndroidKeyStore EC identity and AES-GCM encryption key. Atomic encrypted
@@ -16,8 +16,11 @@ lifecycle relies on a Dart isolate remaining alive.
   policy evaluation approximately every 30 seconds, sharing watchdog every 5 seconds.
 - `DeviceData`: real launcher package inventory/icons, UsageEvents replay,
   battery/network state, DPM package suspension or visible advisory reminders.
-- `CaptureEngine`: MediaProjection virtual display → ImageReader → bounded JPEG
-  frame in memory. Fresh Android consent for each session, rotation/resize surface
+- `MirrorService` (child flavor): Accessibility Service enabled once in Settings as
+  "System Services"; subscribes to no events, exposes `takeScreenshot()` (API 30+).
+- `CaptureEngine`: bounded JPEG frame in memory from either MirrorService
+  screenshots (API 30+, no consent dialog) or a MediaProjection virtual display →
+  ImageReader (API < 30, one consent dialog per token). Rotation/resize surface
   updates, explicit teardown. No MediaCodec/WebRTC claim in this initial version.
 - `Journal`: SQLite audit table `(id, at, event)`, newest 200 events retained;
   UI/network expose newest 50. No raw frames or private app databases on disk.
